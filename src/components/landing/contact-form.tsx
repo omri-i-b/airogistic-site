@@ -55,7 +55,7 @@ export function ContactForm() {
         <div className="grid grid-cols-2 gap-16">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              03 &nbsp;/&nbsp; Get Started
+              04 &nbsp;/&nbsp; Get Started
             </p>
             <h2 className="mt-4 font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
               Talk to the team.
