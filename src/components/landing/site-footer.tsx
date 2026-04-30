@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 export function SiteFooter() {
   return (
@@ -6,7 +7,7 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-[1680px] flex-col gap-6 px-12 py-12 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2.5">
           <Image
-            src="/airogistic-mark.png"
+            src={asset("/airogistic-mark.png")}
             alt=""
             width={28}
             height={28}

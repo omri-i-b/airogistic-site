@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { asset } from "@/lib/asset";
 
 export function SiteNav() {
   return (
@@ -7,7 +8,7 @@ export function SiteNav() {
       <div className="mx-auto flex h-16 max-w-[1680px] items-center justify-between px-12">
         <div className="flex items-center gap-2.5">
           <Image
-            src="/airogistic-mark.png"
+            src={asset("/airogistic-mark.png")}
             alt=""
             width={28}
             height={28}

@@ -1,6 +1,5 @@
 import { SiteNav } from "@/components/landing/site-nav";
 import { Hero } from "@/components/landing/hero";
-import { LogoStrip } from "@/components/landing/logo-strip";
 import { FeatureIntro } from "@/components/landing/feature-intro";
 import { FeatureCards } from "@/components/landing/feature-cards";
 import { FeatureGrid } from "@/components/landing/feature-grid";
@@ -12,7 +11,6 @@ export default function LandingPage() {
     <>
       <SiteNav />
       <Hero />
-      <LogoStrip />
       <FeatureIntro />
       <FeatureCards />
       <FeatureGrid />
