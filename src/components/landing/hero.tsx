@@ -59,8 +59,8 @@ export function Hero() {
           <Image
             src={asset("/airogistic-dashboard.png")}
             alt="Airogistic mission console — flight map, fleet registry, and live test harness"
-            width={1707}
-            height={921}
+            width={1727}
+            height={911}
             priority
             className="w-full"
           />
