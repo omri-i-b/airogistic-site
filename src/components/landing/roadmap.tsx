@@ -37,11 +37,11 @@ export function Roadmap() {
         </div>
 
         <div className="mt-12">
-          <article className="flex flex-col border border-white/10 bg-[#0b1220] lg:flex-row">
-            <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0b1220] via-[#11182a] to-[#0a0f1c] lg:w-1/2 lg:border-r lg:border-b-0">
+          <article className="flex flex-col border border-white/10 bg-[#0a0a0a] lg:flex-row">
+            <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0d0d0d] via-black to-[#0d0d0d] lg:w-1/2 lg:border-r lg:border-b-0">
               <DockGlyph />
-              <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 border border-[#C5E86C]/40 bg-[#C5E86C]/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-[#C5E86C] uppercase">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#C5E86C]" />
                 In Development
               </div>
             </div>
@@ -166,7 +166,7 @@ function DockGlyph() {
           y="-7"
           width="14"
           height="14"
-          fill="#0b1220"
+          fill="#0a0a0a"
           stroke="rgba(255,255,255,0.85)"
           strokeWidth="1.2"
         />

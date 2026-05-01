@@ -27,7 +27,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="mt-16 overflow-hidden border border-white/15 bg-[#0b1220] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
+        <div className="mt-16 overflow-hidden border border-white/15 bg-[#0a0a0a] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
           <div className="flex items-center gap-1.5 border-b border-white/10 bg-black/40 px-4 py-2.5 font-mono text-[10px] tracking-[0.2em] text-white/45 uppercase">
             <span className="h-2 w-2 rounded-full bg-[#FF5F57]" />
             <span className="h-2 w-2 rounded-full bg-[#FEBC2E]" />

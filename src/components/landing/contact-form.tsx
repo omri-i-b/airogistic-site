@@ -85,7 +85,7 @@ export function ContactForm() {
             {state === "success" ? (
               <div className="flex h-full flex-col items-start justify-center py-8">
                 <CheckCircle
-                  className="h-10 w-10 text-emerald-400"
+                  className="h-10 w-10 text-[#C5E86C]"
                   weight="fill"
                 />
                 <h3 className="mt-4 font-display text-3xl font-bold tracking-tight uppercase">
