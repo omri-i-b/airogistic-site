@@ -159,9 +159,6 @@ export function ContactForm() {
                     <ArrowRight className="h-3 w-3" weight="bold" />
                   )}
                 </button>
-                <p className="text-center text-xs text-white/40">
-                  By submitting, you agree to our terms and privacy policy.
-                </p>
               </form>
             )}
           </div>
