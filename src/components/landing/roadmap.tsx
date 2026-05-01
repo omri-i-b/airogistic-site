@@ -115,7 +115,7 @@ function DockGlyph() {
         rx="80"
         ry="14"
         fill="none"
-        stroke="rgba(166,176,216,0.55)"
+        stroke="rgba(197,232,108,0.55)"
         strokeWidth="1.2"
       />
       <ellipse
@@ -124,7 +124,7 @@ function DockGlyph() {
         rx="58"
         ry="10"
         fill="none"
-        stroke="rgba(166,176,216,0.4)"
+        stroke="rgba(197,232,108,0.4)"
         strokeWidth="1"
         strokeDasharray="3 4"
       />
@@ -134,10 +134,10 @@ function DockGlyph() {
         rx="34"
         ry="6"
         fill="none"
-        stroke="rgba(166,176,216,0.7)"
+        stroke="rgba(197,232,108,0.7)"
         strokeWidth="1.4"
       />
-      <circle cx="160" cy="120" r="2.5" fill="#A6B0D8" />
+      <circle cx="160" cy="120" r="2.5" fill="#C5E86C" />
 
       {/* drone above */}
       <g transform="translate(160 60)">
@@ -178,7 +178,7 @@ function DockGlyph() {
         y1="86"
         x2="160"
         y2="116"
-        stroke="rgba(166,176,216,0.5)"
+        stroke="rgba(197,232,108,0.5)"
         strokeWidth="1"
         strokeDasharray="2 3"
       />

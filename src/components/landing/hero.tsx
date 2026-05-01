@@ -8,7 +8,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-[1680px] px-12 pt-20 pb-14">
         <h1 className="max-w-5xl font-display text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
           Eliminate drone downtime from{" "}
-          <span className="text-[#A6B0D8]">configuration drift</span>,
+          <span className="text-[#C5E86C]">configuration drift</span>,
           missed preflight steps, and untested flight parameters.
         </h1>
 

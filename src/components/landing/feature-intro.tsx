@@ -24,7 +24,7 @@ export function FeatureIntro() {
           Most drone program delays aren&rsquo;t mechanical.
           <br />
           <span className="text-white/45">They&rsquo;re </span>
-          <span className="text-[#A6B0D8]">procedural</span>
+          <span className="text-[#C5E86C]">procedural</span>
           <span className="text-white/45">.</span>
         </h2>
         <div className="mt-12 grid grid-cols-3 gap-10 border-t border-white/10 pt-10">
