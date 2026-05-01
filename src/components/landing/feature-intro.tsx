@@ -1,7 +1,7 @@
 const columns = [
   {
-    title: "Bad config kills vehicles",
-    body: "Most lost drones aren't bugs — they're a parameter someone tweaked and pushed without review.",
+    title: "Configuration drift grounds fleets",
+    body: "Parameters get tweaked between flights, never reviewed, never rolled back. Mission day comes and the aircraft fails its preflight — or worse, doesn't get one.",
   },
   {
     title: "Tests don't repeat",
@@ -21,10 +21,10 @@ export function FeatureIntro() {
           01 &nbsp;/&nbsp; The Problem
         </p>
         <h2 className="mt-4 max-w-4xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Drones don&rsquo;t crash from bugs.
+          Most drone program delays aren&rsquo;t mechanical.
           <br />
-          <span className="text-white/45">They crash from </span>
-          <span className="text-[#A6B0D8]">bad config</span>
+          <span className="text-white/45">They&rsquo;re </span>
+          <span className="text-[#A6B0D8]">procedural</span>
           <span className="text-white/45">.</span>
         </h2>
         <div className="mt-12 grid grid-cols-3 gap-10 border-t border-white/10 pt-10">

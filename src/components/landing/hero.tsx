@@ -23,14 +23,15 @@ export function Hero() {
           <span>Missions</span>
         </div>
 
-        <h1 className="max-w-4xl font-display text-[72px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Never lose a vehicle to a{" "}
-          <span className="text-[#A6B0D8]">bad parameter</span> again.
+        <h1 className="max-w-5xl font-display text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
+          Eliminate drone downtime from{" "}
+          <span className="text-[#A6B0D8]">configuration drift</span>,
+          missed preflight steps, and untested flight parameters.
         </h1>
 
-        <p className="mt-6 max-w-xl text-base text-white/65">
-          Fleet, parameter, and test management for teams flying unmanned
-          vehicles — in the field or in simulation.
+        <p className="mt-6 max-w-2xl text-lg text-white/70">
+          Know your fleet is flight-ready — before every mission, every
+          time.
         </p>
 
         <div className="mt-8 flex items-center gap-3">
