@@ -36,23 +36,23 @@ export function Roadmap() {
           </span>
         </div>
 
-        <div className="mt-12 grid grid-cols-3 gap-3">
-          <article className="col-span-2 flex flex-col border border-white/10 bg-[#0b1220]">
-            <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0b1220] via-[#11182a] to-[#0a0f1c]">
+        <div className="mt-12">
+          <article className="flex flex-col border border-white/10 bg-[#0b1220] lg:flex-row">
+            <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0b1220] via-[#11182a] to-[#0a0f1c] lg:w-1/2 lg:border-r lg:border-b-0">
               <DockGlyph />
               <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
                 <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
                 In Development
               </div>
             </div>
-            <div className="p-8">
+            <div className="p-8 lg:w-1/2 lg:p-10">
               <p className="font-mono text-[10px] tracking-[0.25em] text-white/40 uppercase">
                 Hardware &nbsp;/&nbsp; Field Infrastructure
               </p>
               <h3 className="mt-2 font-display text-3xl font-bold tracking-tight uppercase">
                 Airogistic Dock
               </h3>
-              <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/65">
+              <p className="mt-3 text-sm leading-relaxed text-white/65">
                 A drone docking station for persistent operations. Land,
                 charge, swap parameters, and redeploy on a schedule — all
                 without rolling a truck. Built to live outdoors and report
@@ -77,29 +77,6 @@ export function Roadmap() {
               </div>
             </div>
           </article>
-
-          <div className="flex flex-col gap-3">
-            {[1, 2].map((i) => (
-              <div
-                key={i}
-                className="flex h-full flex-col justify-between border border-dashed border-white/15 bg-white/[0.015] p-6"
-              >
-                <span className="inline-flex w-fit items-center gap-1.5 border border-white/15 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-white/55 uppercase">
-                  <span className="h-1.5 w-1.5 rounded-full bg-white/40" />
-                  Coming soon
-                </span>
-                <div>
-                  <h3 className="font-display text-xl font-bold tracking-tight text-white/55 uppercase">
-                    Project &nbsp;0{i + 1}
-                  </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/40">
-                    More products in the Airogistic stack are on the way.
-                    Want a preview? Reach out.
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
