@@ -209,31 +209,6 @@ export default function DockPage() {
         </div>
       </section>
 
-      {/* Lattice integration callout */}
-      <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-12 py-20">
-          <article className="border border-white/10 bg-[#0a0a0a] p-10">
-            <Crosshair className="h-7 w-7 text-[#C5E86C]" weight="regular" />
-            <h2 className="mt-6 max-w-3xl font-display text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
-              The dock is one half. The platform is the other.
-            </h2>
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/70">
-              Every Airogistic Dock reports up to the same Drone
-              Performance Harness running your fleet. Configuration drift
-              caught at the dock. Recovery diagnostics streamed back to
-              cloud. The hardware and software ship as one system.
-            </p>
-            <Link
-              href="/"
-              className="mt-8 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
-            >
-              See the platform
-              <ArrowRight className="h-3 w-3" weight="bold" />
-            </Link>
-          </article>
-        </div>
-      </section>
-
       <CtaStrip
         eyebrow="Talk to the team"
         headline="Get on the early-access list."
