@@ -4,6 +4,7 @@ import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { asset } from "@/lib/asset";
 
 const links = [
+  { href: "/", label: "Software" },
   { href: "/infrastructure", label: "Coupled-Pole Stations" },
   { href: "/company", label: "Company" },
 ];
@@ -25,7 +26,7 @@ export function SiteNav() {
             Airogistic
           </span>
         </Link>
-        <nav className="hidden items-center gap-8 font-mono text-[11px] tracking-[0.25em] text-white/65 uppercase md:flex">
+        <nav className="hidden items-center gap-8 text-sm text-white/75 md:flex">
           {links.map((l) => (
             <Link
               key={l.href}
