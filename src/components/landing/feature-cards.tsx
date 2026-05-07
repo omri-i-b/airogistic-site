@@ -37,7 +37,7 @@ export function FeatureCards() {
               <h3 className="mt-6 font-display text-xl font-bold tracking-tight uppercase">
                 {card.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/60">
+              <p className="mt-2 text-base leading-relaxed text-white/65">
                 {card.body}
               </p>
             </div>

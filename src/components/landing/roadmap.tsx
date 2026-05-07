@@ -1,4 +1,10 @@
-import { Lightning, ShieldCheck, Path } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
+import {
+  Lightning,
+  ShieldCheck,
+  Path,
+  ArrowRight,
+} from "@phosphor-icons/react/dist/ssr";
 
 const dockSpecs = [
   {
@@ -52,11 +58,10 @@ export function Roadmap() {
               <h3 className="mt-2 font-display text-3xl font-bold tracking-tight uppercase">
                 Airogistic Dock
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/65">
+              <p className="mt-4 text-base leading-relaxed text-white/70">
                 A drone docking station for persistent operations. Land,
                 charge, swap parameters, and redeploy on a schedule — all
-                without rolling a truck. Built to live outdoors and report
-                up to the same fleet view you already use.
+                without rolling a truck.
               </p>
 
               <div className="mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
@@ -68,13 +73,18 @@ export function Roadmap() {
                       <h4 className="mt-3 font-display text-base font-bold tracking-tight uppercase">
                         {spec.label}
                       </h4>
-                      <p className="mt-1.5 text-xs leading-relaxed text-white/55">
-                        {spec.body}
-                      </p>
                     </div>
                   );
                 })}
               </div>
+
+              <Link
+                href="/dock"
+                className="mt-8 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
+              >
+                Learn more about the Dock
+                <ArrowRight className="h-3 w-3" weight="bold" />
+              </Link>
             </div>
           </article>
         </div>

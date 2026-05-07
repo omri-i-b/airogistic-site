@@ -59,7 +59,7 @@ export function FeatureGrid() {
                 <h3 className="mt-4 font-display text-lg font-bold tracking-tight uppercase">
                   {feat.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/55">
+                <p className="mt-2 text-base leading-relaxed text-white/65">
                   {feat.body}
                 </p>
               </div>

@@ -132,7 +132,7 @@ export default function CompanyPage() {
                 <div className="font-display text-3xl font-bold tracking-tight text-[#C5E86C]">
                   {m.year}
                 </div>
-                <p className="max-w-3xl text-sm leading-relaxed text-white/65">
+                <p className="max-w-3xl text-base leading-relaxed text-white/70">
                   {m.body}
                 </p>
               </div>
@@ -156,7 +156,7 @@ export default function CompanyPage() {
                   <h3 className="mt-6 font-display text-xl font-bold tracking-tight uppercase">
                     {c.label}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-white/60">
+                  <p className="mt-3 text-base leading-relaxed text-white/65">
                     {c.body}
                   </p>
                 </article>
@@ -173,7 +173,7 @@ export default function CompanyPage() {
               <h3 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
                 Investor materials are in progress.
               </h3>
-              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/60">
+              <p className="mt-3 max-w-3xl text-base leading-relaxed text-white/65">
                 We&rsquo;re preparing a deck and data room for institutional
                 investors. If you&rsquo;d like a preview, reach out via the
                 home-page contact form and we&rsquo;ll be in touch.

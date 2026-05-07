@@ -150,7 +150,7 @@ export default function InfrastructurePage() {
               <h3 className="mt-3 font-display text-2xl font-bold tracking-tight uppercase">
                 Launch, Land &amp; Recharge
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/65">
+              <p className="mt-3 text-base leading-relaxed text-white/70">
                 Precision docking on two structural poles enables stacked
                 multi-drone deployment and guided recovery — in field,
                 vehicle-mounted, or mobile platform configurations.
@@ -159,7 +159,7 @@ export default function InfrastructurePage() {
                 {operationsBullets.map((b) => (
                   <li
                     key={b}
-                    className="flex items-start gap-2.5 text-sm text-white/75"
+                    className="flex items-start gap-2.5 text-base text-white/80"
                   >
                     <Crosshair
                       className="mt-0.5 h-4 w-4 shrink-0 text-[#C5E86C]"
@@ -178,7 +178,7 @@ export default function InfrastructurePage() {
               <h3 className="mt-3 font-display text-2xl font-bold tracking-tight uppercase">
                 On-Dock Health &amp; Calibration
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/65">
+              <p className="mt-3 text-base leading-relaxed text-white/70">
                 Every docking cycle runs a full diagnostic sweep. Problems
                 are caught at the station — not discovered mid-flight.
               </p>
@@ -188,7 +188,7 @@ export default function InfrastructurePage() {
                   return (
                     <li
                       key={b.text}
-                      className="flex items-start gap-2.5 text-sm text-white/75"
+                      className="flex items-start gap-2.5 text-base text-white/80"
                     >
                       <Icon
                         className="mt-0.5 h-4 w-4 shrink-0 text-white/85"
@@ -215,7 +215,7 @@ export default function InfrastructurePage() {
                 <h4 className="mt-3 font-display text-xl font-bold tracking-tight uppercase">
                   {f.title}
                 </h4>
-                <p className="mt-3 text-sm leading-relaxed text-white/60">
+                <p className="mt-3 text-base leading-relaxed text-white/65">
                   {f.body}
                 </p>
               </article>
@@ -255,7 +255,7 @@ export default function InfrastructurePage() {
                   <h4 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
                     {f.title}
                   </h4>
-                  <p className="mt-3 text-sm leading-relaxed text-white/60">
+                  <p className="mt-3 text-base leading-relaxed text-white/65">
                     {f.body}
                   </p>
                 </article>
@@ -287,7 +287,7 @@ export default function InfrastructurePage() {
                   <h3 className="mt-5 font-display text-lg font-bold tracking-tight uppercase">
                     {e.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">
+                  <p className="mt-2 text-base leading-relaxed text-white/65">
                     {e.body}
                   </p>
                 </article>
@@ -301,7 +301,7 @@ export default function InfrastructurePage() {
               <h3 className="font-display text-lg font-bold tracking-tight uppercase">
                 Industry position
               </h3>
-              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-white/65">
+              <p className="mt-2 max-w-3xl text-base leading-relaxed text-white/70">
                 Coupled-Pole stations lead the drone industry in
                 reliability, repeatability, and safety. From stacked swarm
                 launch to inertia-compensated mobile recovery, no other
