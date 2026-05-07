@@ -28,18 +28,13 @@ export function Roadmap() {
   return (
     <section className="border-b border-white/10 bg-black">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
-        <div className="flex items-end justify-between">
-          <div>
-            <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              03 &nbsp;/&nbsp; The Hardware
-            </p>
-            <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-              The other half of the platform.
-            </h2>
-          </div>
-          <span className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            Patented &nbsp;·&nbsp; Austin TX
-          </span>
+        <div>
+          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+            03 &nbsp;/&nbsp; The Hardware
+          </p>
+          <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            The other half of the platform.
+          </h2>
         </div>
 
         <div className="mt-12">

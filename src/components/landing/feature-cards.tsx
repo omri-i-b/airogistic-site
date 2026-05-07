@@ -28,10 +28,11 @@ export function FeatureCards() {
       <div className="mx-auto grid max-w-[1680px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card, i) => {
           const Icon = card.icon;
+          const last = i === cards.length - 1;
           return (
             <div
               key={card.title}
-              className={`p-10 ${i < cards.length - 1 ? "border-r border-white/10" : ""}`}
+              className={`p-6 sm:p-8 lg:p-10 ${last ? "" : "border-b border-white/10 lg:border-r lg:border-b-0"}`}
             >
               <Icon className="h-6 w-6 text-white" weight="regular" />
               <h3 className="mt-6 font-display text-xl font-bold tracking-tight uppercase">
