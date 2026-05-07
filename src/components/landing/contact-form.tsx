@@ -5,6 +5,11 @@ import { CheckCircle, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 type State = "idle" | "submitting" | "success";
 
+// Web3Forms access key — set NEXT_PUBLIC_WEB3FORMS_KEY in your env.
+// Without it, form submissions are logged to the console only (dev fallback).
+// Sign up at https://web3forms.com to get a free key.
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+
 const fieldClass =
   "w-full border border-white/15 bg-white/[0.03] px-3 py-2.5 text-sm text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/40 focus:bg-white/[0.06]";
 
@@ -23,7 +28,7 @@ export function ContactForm() {
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setValues((v) => ({ ...v, [key]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
     if (!values.name.trim()) return setError("Please enter your name.");
@@ -31,8 +36,45 @@ export function ContactForm() {
       return setError("Please enter a valid email address.");
     if (!values.message.trim())
       return setError("Tell us a bit about what you're building.");
+
     setState("submitting");
-    setTimeout(() => setState("success"), 600);
+
+    if (!WEB3FORMS_KEY) {
+      console.warn(
+        "[Airogistic] NEXT_PUBLIC_WEB3FORMS_KEY not set — submission logged only:",
+        values,
+      );
+      setTimeout(() => setState("success"), 600);
+      return;
+    }
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `Airogistic — ${values.name} (${values.company || "no company"})`,
+          from_name: "airogistic.com",
+          ...values,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data?.success) {
+        throw new Error(data?.message || "Submission failed");
+      }
+      setState("success");
+    } catch (err) {
+      setState("idle");
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please email us directly.",
+      );
+    }
   };
 
   return (

@@ -1,0 +1,194 @@
+import type { Metadata } from "next";
+import {
+  Buildings,
+  Briefcase,
+  Envelope,
+  MapPin,
+} from "@phosphor-icons/react/dist/ssr";
+import { SiteNav } from "@/components/landing/site-nav";
+import { SiteFooter } from "@/components/landing/site-footer";
+import { CtaStrip } from "@/components/landing/cta-strip";
+
+export const metadata: Metadata = {
+  title: "Company — Airogistic",
+  description:
+    "Defining the infrastructure of autonomous flight. Founded 2006, Austin TX.",
+};
+
+const milestones = [
+  {
+    year: "2006",
+    body: "Texas-based LLC founded as a spin-off from Appliance Lab and the University of Applied Research Labs. Initial focus: DC battery-powered air collection systems built on an established IoT sensor platform.",
+  },
+  {
+    year: "2011",
+    body: "Began developing embedded drone flight controllers. DC airflow controllers and motors adapted from air-sampling applications for use in multi-rotor drones.",
+  },
+  {
+    year: "2012",
+    body: "First Coupled-Pole drone test stands designed and operated.",
+  },
+  {
+    year: "2014",
+    body: "Patents filed for Coupled-Pole drone launch and landing stations. Patent protections secured ahead of broader autonomous-drone market growth.",
+  },
+  {
+    year: "2019+",
+    body: "Continued refinement of station technologies, test infrastructure, and applications. As regulations ease and full-autonomy demand grows, the company is positioned to commercialize across logistics, defense, and field operations.",
+  },
+];
+
+const contactCards = [
+  {
+    icon: MapPin,
+    label: "Address",
+    body: "Austin, Texas",
+  },
+  {
+    icon: Briefcase,
+    label: "Sales & Investment",
+    body: "Reach out via the contact form on the home page — we'll route directly to the right person.",
+  },
+  {
+    icon: Envelope,
+    label: "General",
+    body: "Open to inquiries from drone operators, defense and aerospace teams, and partners building on UAV infrastructure.",
+  },
+];
+
+export default function CompanyPage() {
+  return (
+    <>
+      <SiteNav />
+
+      {/* Hero */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-[1680px] px-12 pt-24 pb-20">
+          <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
+            About Airogistic &nbsp;·&nbsp; Founded 2006
+          </p>
+          <h1 className="mt-5 max-w-5xl font-display text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Defining the infrastructure of{" "}
+            <span className="text-[#C5E86C]">autonomous flight</span>.
+          </h1>
+        </div>
+      </section>
+
+      {/* Vision + Mission */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto grid max-w-[1680px] grid-cols-1 gap-12 px-12 py-24 lg:grid-cols-2">
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+              01 &nbsp;/&nbsp; Vision
+            </p>
+            <h2 className="mt-4 font-display text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
+              From 2D to 3D.
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-white/65">
+              Airogistic defines technologies that advance autonomy
+              infrastructure — transforming how goods, people, and services
+              move and how the efficiency, safety, and connectivity of
+              autonomous systems improves. As the world transitions from 2D
+              to 3D, we enable the combined navigation of ground, water,
+              and aerial vehicles for sensing and transport applications.
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+              02 &nbsp;/&nbsp; Mission
+            </p>
+            <h2 className="mt-4 font-display text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
+              Patented stations. Real flight cycles.
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-white/65">
+              Airogistic advances infrastructure through its patented
+              Coupled-Pole VTOL drone stations — supporting battery
+              charging, refueling, preflight testing, launching, landing,
+              and AI-assisted preventive maintenance. Our capabilities
+              span engineering, hardware, software, packaging, integration,
+              and communications across drone fleets, stations, and
+              systems — concept to production.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* History */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-[1680px] px-12 py-24">
+          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+            03 &nbsp;/&nbsp; History
+          </p>
+          <h2 className="mt-4 max-w-3xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Two decades of building the dock.
+          </h2>
+
+          <div className="mt-12 border-t border-white/10">
+            {milestones.map((m) => (
+              <div
+                key={m.year}
+                className="grid grid-cols-1 gap-6 border-b border-white/10 py-8 lg:grid-cols-[180px_1fr]"
+              >
+                <div className="font-display text-3xl font-bold tracking-tight text-[#C5E86C]">
+                  {m.year}
+                </div>
+                <p className="max-w-3xl text-sm leading-relaxed text-white/65">
+                  {m.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact / Investors */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto max-w-[1680px] px-12 py-24">
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+            {contactCards.map((c) => {
+              const Icon = c.icon;
+              return (
+                <article
+                  key={c.label}
+                  className="border border-white/10 bg-[#0a0a0a] p-8"
+                >
+                  <Icon className="h-6 w-6 text-white/85" weight="regular" />
+                  <h3 className="mt-6 font-display text-xl font-bold tracking-tight uppercase">
+                    {c.label}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/60">
+                    {c.body}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
+
+          <article className="mt-3 flex items-start gap-4 border border-white/10 bg-[#0a0a0a] p-8">
+            <Buildings className="h-6 w-6 shrink-0 text-white/85" weight="regular" />
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.25em] text-white/40 uppercase">
+                Investors
+              </p>
+              <h3 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
+                Investor materials are in progress.
+              </h3>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/60">
+                We&rsquo;re preparing a deck and data room for institutional
+                investors. If you&rsquo;d like a preview, reach out via the
+                home-page contact form and we&rsquo;ll be in touch.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <CtaStrip
+        eyebrow="Talk to the team"
+        headline="Start a conversation."
+      />
+
+      <SiteFooter />
+    </>
+  );
+}
