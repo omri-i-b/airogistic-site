@@ -112,16 +112,16 @@ export default function InfrastructurePage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-[1680px] px-12 pt-24 pb-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
-            Patented &nbsp;·&nbsp; Austin TX &nbsp;·&nbsp; Est. 2019
+            Coupled-Pole Stations &nbsp;·&nbsp; Patented &nbsp;·&nbsp; Austin TX
           </p>
           <h1 className="mt-5 max-w-5xl font-display text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            Infrastructure that keeps drones{" "}
+            The infrastructure that keeps drones{" "}
             <span className="text-[#C5E86C]">mission-ready</span>, around the
             clock.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70">
-            Coupled-Pole Stations — autonomous launch, land, recharge, and
-            recovery infrastructure. No operator required.
+            Autonomous launch, land, recharge, and recovery on a dual-pole
+            station. The full mission cycle, no operator in the loop.
           </p>
         </div>
       </section>
@@ -313,9 +313,39 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
+      {/* 04 — Where it fits */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-[1680px] px-12 py-24">
+          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+            04 &nbsp;/&nbsp; Where it fits
+          </p>
+          <h2 className="mt-4 max-w-4xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Anywhere a drone needs to come home — and go again.
+          </h2>
+
+          <div className="mt-12 flex flex-wrap gap-3">
+            {[
+              "Warehouse launch operations",
+              "Delivery hubs",
+              "Logistics depots",
+              "Agricultural stations",
+              "Mobile field deployments",
+              "Defense forward-operating bases",
+            ].map((u) => (
+              <div
+                key={u}
+                className="border border-white/15 bg-[#0a0a0a] px-5 py-3 font-mono text-[12px] tracking-[0.2em] text-white/80 uppercase"
+              >
+                {u}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaStrip
         eyebrow="Talk to the team"
-        headline="See the dock run a full cycle."
+        headline="See a station run a full cycle."
       />
 
       <SiteFooter />

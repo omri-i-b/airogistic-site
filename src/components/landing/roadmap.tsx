@@ -31,14 +31,14 @@ export function Roadmap() {
         <div className="flex items-end justify-between">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              03 &nbsp;/&nbsp; On the Workbench
+              03 &nbsp;/&nbsp; The Hardware
             </p>
             <h2 className="mt-4 max-w-3xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-              What we&rsquo;re building next.
+              The other half of the platform.
             </h2>
           </div>
           <span className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            Roadmap &nbsp;/&nbsp; 2026
+            Patented &nbsp;·&nbsp; Austin TX
           </span>
         </div>
 
@@ -46,22 +46,18 @@ export function Roadmap() {
           <article className="flex flex-col border border-white/10 bg-[#0a0a0a] lg:flex-row">
             <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0d0d0d] via-black to-[#0d0d0d] lg:w-1/2 lg:border-r lg:border-b-0">
               <DockGlyph />
-              <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 border border-[#C5E86C]/40 bg-[#C5E86C]/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-[#C5E86C] uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#C5E86C]" />
-                In Development
-              </div>
             </div>
             <div className="p-8 lg:w-1/2 lg:p-10">
               <p className="font-mono text-[10px] tracking-[0.25em] text-white/40 uppercase">
                 Hardware &nbsp;/&nbsp; Field Infrastructure
               </p>
               <h3 className="mt-2 font-display text-3xl font-bold tracking-tight uppercase">
-                The Dock
+                Coupled-Pole Stations
               </h3>
               <p className="mt-4 text-base leading-relaxed text-white/70">
-                A drone docking station for persistent operations. Land,
-                charge, swap parameters, and redeploy on a schedule — all
-                without rolling a truck.
+                A patented dual-mast docking station for persistent
+                operations. Land, charge, swap parameters, and redeploy on
+                a schedule — all without rolling a truck.
               </p>
 
               <div className="mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
@@ -79,10 +75,10 @@ export function Roadmap() {
               </div>
 
               <Link
-                href="/dock"
+                href="/infrastructure"
                 className="mt-8 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
               >
-                Learn more about the Dock
+                See the stations
                 <ArrowRight className="h-3 w-3" weight="bold" />
               </Link>
             </div>

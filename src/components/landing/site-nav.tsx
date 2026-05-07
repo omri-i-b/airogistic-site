@@ -4,8 +4,7 @@ import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { asset } from "@/lib/asset";
 
 const links = [
-  { href: "/infrastructure", label: "Infrastructure" },
-  { href: "/dock", label: "The Dock" },
+  { href: "/infrastructure", label: "Coupled-Pole Stations" },
   { href: "/company", label: "Company" },
 ];
 
