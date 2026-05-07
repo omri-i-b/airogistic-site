@@ -25,7 +25,7 @@ const cards = [
 export function FeatureCards() {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto grid max-w-[1680px] grid-cols-3">
+      <div className="mx-auto grid max-w-[1680px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card, i) => {
           const Icon = card.icon;
           return (

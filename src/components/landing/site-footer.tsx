@@ -4,7 +4,7 @@ import { asset } from "@/lib/asset";
 export function SiteFooter() {
   return (
     <footer className="bg-black">
-      <div className="mx-auto flex max-w-[1680px] flex-col gap-6 px-12 py-12 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[1680px] flex-col gap-6 px-5 md:px-8 lg:px-12 py-12 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2.5">
           <Image
             src={asset("/airogistic-mark.png")}

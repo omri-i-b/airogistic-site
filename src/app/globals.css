@@ -53,7 +53,7 @@
   --font-display: var(--font-display-src);
   --font-mono: var(--font-mono-src);
 
-  /* Accent — tamed Robinhood-flavored chartreuse */
+  /* Accent , tamed Robinhood-flavored chartreuse */
   --accent: #c5e86c;
 
 --background: oklch(1 0 0);

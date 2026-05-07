@@ -22,14 +22,14 @@ import { SiteFooter } from "@/components/landing/site-footer";
 import { CtaStrip } from "@/components/landing/cta-strip";
 
 export const metadata: Metadata = {
-  title: "Infrastructure — Airogistic",
+  title: "Infrastructure, Airogistic",
   description:
-    "Patented Coupled-Pole docking technology — autonomous launch, land, recharge, and recovery infrastructure for unmanned vehicle fleets.",
+    "Patented Coupled-Pole docking technology, autonomous launch, land, recharge, and recovery infrastructure for unmanned vehicle fleets.",
 };
 
 const operationsBullets = [
   "Stacked swarm launch from dual poles",
-  "Guided autonomous land and recharge — no operator",
+  "Guided autonomous land and recharge, no operator",
   "Inertia-compensated launching on moving vehicle platforms",
   "Operates in wind, rain, and harsh field environments",
   "Stationary and vehicle-mounted configurations",
@@ -37,7 +37,7 @@ const operationsBullets = [
 
 const diagnosticsBullets = [
   { icon: Pulse, text: "Sonic structural health check" },
-  { icon: ThermometerSimple, text: "Temperature monitoring — motors, ESCs, battery" },
+  { icon: ThermometerSimple, text: "Temperature monitoring, motors, ESCs, battery" },
   { icon: Wind, text: "Propulsion and lift force measurement" },
   { icon: Scales, text: "Payload balance verification" },
   { icon: Compass, text: "IMU pole reference for inertial calibration" },
@@ -58,7 +58,7 @@ const stationFeatures = [
   {
     tag: "SWARM",
     title: "Stacked swarm deployment",
-    body: "Multiple drones staged on a single pole pair. Sequential or simultaneous launch sequencing controlled entirely by station software — no ground crew needed.",
+    body: "Multiple drones staged on a single pole pair. Sequential or simultaneous launch sequencing controlled entirely by station software, no ground crew needed.",
   },
 ];
 
@@ -76,7 +76,7 @@ const recoveryFeatures = [
   {
     tag: "FUSED",
     title: "Sensor fusion",
-    body: "Radar, Lidar, and Camera modalities fuse into a single recovery guidance output. Failure of any one sensor does not abort recovery — the system degrades gracefully and continues.",
+    body: "Radar, Lidar, and Camera modalities fuse into a single recovery guidance output. Failure of any one sensor does not abort recovery, the system degrades gracefully and continues.",
   },
 ];
 
@@ -84,7 +84,7 @@ const ecosystem = [
   {
     icon: Cube,
     title: "DroneDome Operations Shelter",
-    body: "Modular netted enclosures for safe drone launch, flight, and landing — outdoor or indoor.",
+    body: "Modular netted enclosures for safe drone launch, flight, and landing, outdoor or indoor.",
   },
   {
     icon: Wrench,
@@ -110,11 +110,11 @@ export default function InfrastructurePage() {
 
       {/* Hero */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-12 pt-24 pb-20">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-14 md:pt-20 lg:pt-24 pb-12 md:pb-16 lg:pb-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
             Coupled-Pole Stations &nbsp;·&nbsp; Patented &nbsp;·&nbsp; Austin TX
           </p>
-          <h1 className="mt-5 max-w-5xl font-display text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+          <h1 className="mt-5 max-w-5xl font-display text-[34px] md:text-[48px] lg:text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             The infrastructure that keeps drones{" "}
             <span className="text-[#C5E86C]">mission-ready</span>, around the
             clock.
@@ -126,15 +126,15 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* 01 — Coupled Pole Station */}
+      {/* 01, Coupled Pole Station */}
       <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto max-w-[1680px] px-12 py-24">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
             01 &nbsp;/&nbsp; Coupled Pole Station
           </p>
-          <h2 className="mt-4 max-w-4xl font-display text-[52px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+          <h2 className="mt-4 max-w-4xl font-display text-[28px] md:text-[40px] lg:text-[52px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             Launch. Land. Recharge.{" "}
-            <span className="text-[#C5E86C]">Repeat</span> — automatically.
+            <span className="text-[#C5E86C]">Repeat</span>, automatically.
           </h2>
           <p className="mt-6 max-w-3xl text-base text-white/65">
             The Coupled Pole is a dual-mast docking station purpose-built for
@@ -152,7 +152,7 @@ export default function InfrastructurePage() {
               </h3>
               <p className="mt-3 text-base leading-relaxed text-white/70">
                 Precision docking on two structural poles enables stacked
-                multi-drone deployment and guided recovery — in field,
+                multi-drone deployment and guided recovery, in field,
                 vehicle-mounted, or mobile platform configurations.
               </p>
               <ul className="mt-6 space-y-2.5">
@@ -180,7 +180,7 @@ export default function InfrastructurePage() {
               </h3>
               <p className="mt-3 text-base leading-relaxed text-white/70">
                 Every docking cycle runs a full diagnostic sweep. Problems
-                are caught at the station — not discovered mid-flight.
+                are caught at the station, not discovered mid-flight.
               </p>
               <ul className="mt-6 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
                 {diagnosticsBullets.map((b) => {
@@ -224,14 +224,14 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* 02 — Patented Robotic Recovery */}
+      {/* 02, Patented Robotic Recovery */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-12 py-24">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
             02 &nbsp;/&nbsp; Patented Robotic Recovery
           </p>
-          <h2 className="mt-4 max-w-4xl font-display text-[52px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            Radar, Lidar, and Camera —{" "}
+          <h2 className="mt-4 max-w-4xl font-display text-[28px] md:text-[40px] lg:text-[52px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Radar, Lidar, and Camera ,{" "}
             <span className="text-[#C5E86C]">fused</span> drone recovery.
           </h2>
           <p className="mt-6 max-w-3xl text-base text-white/65">
@@ -265,13 +265,13 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* 03 — Ecosystem */}
+      {/* 03, Ecosystem */}
       <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto max-w-[1680px] px-12 py-24">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
             03 &nbsp;/&nbsp; The Ecosystem
           </p>
-          <h2 className="mt-4 max-w-3xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+          <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             The full infrastructure ecosystem.
           </h2>
 
@@ -313,14 +313,14 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* 04 — Where it fits */}
+      {/* 04, Where it fits */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-12 py-24">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
             04 &nbsp;/&nbsp; Where it fits
           </p>
-          <h2 className="mt-4 max-w-4xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            Anywhere a drone needs to come home — and go again.
+          <h2 className="mt-4 max-w-4xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Anywhere a drone needs to come home, and go again.
           </h2>
 
           <div className="mt-12 flex flex-wrap gap-3">

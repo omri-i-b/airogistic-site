@@ -8,7 +8,7 @@ const columns = [
   {
     icon: Sliders,
     title: "Configuration drift grounds fleets",
-    body: "Parameters get tweaked between flights, never reviewed, never rolled back. Mission day comes and the aircraft fails its preflight — or worse, doesn't get one.",
+    body: "Parameters get tweaked between flights, never reviewed, never rolled back. Mission day comes and the aircraft fails its preflight, or worse, doesn't get one.",
   },
   {
     icon: ArrowsCounterClockwise,
@@ -25,18 +25,18 @@ const columns = [
 export function FeatureIntro() {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto max-w-[1680px] px-12 py-20">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           01 &nbsp;/&nbsp; The Problem
         </p>
-        <h2 className="mt-4 max-w-4xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+        <h2 className="mt-4 max-w-4xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           Most drone program delays aren&rsquo;t mechanical.
           <br />
           <span className="text-white/45">They&rsquo;re </span>
           <span className="text-[#C5E86C]">procedural</span>
           <span className="text-white/45">.</span>
         </h2>
-        <div className="mt-12 grid grid-cols-3 gap-10 border-t border-white/10 pt-10">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 border-t border-white/10 pt-10">
           {columns.map((col) => {
             const Icon = col.icon;
             return (

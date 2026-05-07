@@ -28,15 +28,15 @@ const articles = [
 export function Articles() {
   return (
     <section className="border-b border-white/10 bg-[#0a0a0a]">
-      <div className="mx-auto max-w-[1680px] px-12 py-20">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           05 &nbsp;/&nbsp; Field Notes
         </p>
-        <h2 className="mt-4 font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+        <h2 className="mt-4 font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           From the test range.
         </h2>
 
-        <div className="mt-12 grid grid-cols-3 gap-3">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {articles.map((article) => (
             <article
               key={article.title}

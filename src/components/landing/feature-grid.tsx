@@ -11,7 +11,7 @@ const features = [
   {
     icon: AirplaneTilt,
     title: "Fleet registry",
-    body: "Vehicles, ground stations, types — tracked in one place.",
+    body: "Vehicles, ground stations, types, tracked in one place.",
   },
   {
     icon: GitBranch,
@@ -43,14 +43,14 @@ const features = [
 export function FeatureGrid() {
   return (
     <section className="border-b border-white/10">
-      <div className="mx-auto max-w-[1680px] px-12 py-20">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="mb-4 font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           02 &nbsp;/&nbsp; The Platform
         </p>
-        <h2 className="max-w-3xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Fleet, parameters, tests, missions — one system.
+        <h2 className="max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+          Fleet, parameters, tests, missions, one system.
         </h2>
-        <div className="mt-12 grid grid-cols-3 gap-x-12 gap-y-10 border-t border-white/10 pt-10">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 lg:gap-x-12 gap-y-10 border-t border-white/10 pt-10">
           {features.map((feat) => {
             const Icon = feat.icon;
             return (

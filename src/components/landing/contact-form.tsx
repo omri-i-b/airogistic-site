@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 type State = "idle" | "submitting" | "success";
 
-// Web3Forms access key — set NEXT_PUBLIC_WEB3FORMS_KEY in your env.
+// Web3Forms access key, set NEXT_PUBLIC_WEB3FORMS_KEY in your env.
 // Without it, form submissions are logged to the console only (dev fallback).
 // Sign up at https://web3forms.com to get a free key.
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
@@ -41,7 +41,7 @@ export function ContactForm() {
 
     if (!WEB3FORMS_KEY) {
       console.warn(
-        "[Airogistic] NEXT_PUBLIC_WEB3FORMS_KEY not set — submission logged only:",
+        "[Airogistic] NEXT_PUBLIC_WEB3FORMS_KEY not set, submission logged only:",
         values,
       );
       setTimeout(() => setState("success"), 600);
@@ -57,7 +57,7 @@ export function ContactForm() {
         },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: `Airogistic — ${values.name} (${values.company || "no company"})`,
+          subject: `Airogistic, ${values.name} (${values.company || "no company"})`,
           from_name: "airogistic.com",
           ...values,
         }),
@@ -93,13 +93,13 @@ export function ContactForm() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/85 to-black" />
 
-      <div className="relative mx-auto max-w-[1680px] px-12 py-28">
-        <div className="grid grid-cols-2 gap-16">
+      <div className="relative mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-20 lg:py-28">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
               04 &nbsp;/&nbsp; Get Started
             </p>
-            <h2 className="mt-4 font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            <h2 className="mt-4 font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
               Talk to the team.
             </h2>
             <p className="mt-6 max-w-md text-base text-white/60">
@@ -131,7 +131,7 @@ export function ContactForm() {
                   weight="fill"
                 />
                 <h3 className="mt-4 font-display text-3xl font-bold tracking-tight uppercase">
-                  Thanks — we&rsquo;ll be in touch.
+                  Thanks, we&rsquo;ll be in touch.
                 </h3>
                 <p className="mt-2 max-w-sm text-sm text-white/60">
                   A member of our team will reach out at{" "}
@@ -141,7 +141,7 @@ export function ContactForm() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <Field label="Name" htmlFor="name">
                     <input
                       id="name"

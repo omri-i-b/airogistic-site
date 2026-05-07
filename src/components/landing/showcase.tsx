@@ -39,13 +39,13 @@ const tiles = [
 export function Showcase() {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto max-w-[1680px] px-12 py-20">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <div className="mb-10 flex items-end justify-between">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
               03 &nbsp;/&nbsp; The Stack
             </p>
-            <h2 className="mt-4 font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            <h2 className="mt-4 font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
               Every layer of your operation.
             </h2>
           </div>

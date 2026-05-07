@@ -10,7 +10,7 @@ const dockSpecs = [
   {
     icon: Lightning,
     label: "Autonomous charging",
-    body: "Land, contact, charge, redeploy — no operator in the loop.",
+    body: "Land, contact, charge, redeploy, no operator in the loop.",
   },
   {
     icon: ShieldCheck,
@@ -27,13 +27,13 @@ const dockSpecs = [
 export function Roadmap() {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto max-w-[1680px] px-12 py-20">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <div className="flex items-end justify-between">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
               03 &nbsp;/&nbsp; The Hardware
             </p>
-            <h2 className="mt-4 max-w-3xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
               The other half of the platform.
             </h2>
           </div>
@@ -57,10 +57,10 @@ export function Roadmap() {
               <p className="mt-4 text-base leading-relaxed text-white/70">
                 A patented dual-mast docking station for persistent
                 operations. Land, charge, swap parameters, and redeploy on
-                a schedule — all without rolling a truck.
+                a schedule, all without rolling a truck.
               </p>
 
-              <div className="mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-white/10 pt-6">
                 {dockSpecs.map((spec) => {
                   const Icon = spec.icon;
                   return (

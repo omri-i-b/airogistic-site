@@ -12,22 +12,22 @@ const logos = [
 const stats = [
   { value: "0", label: "Vehicles lost to a bad parameter on Airogistic" },
   { value: "10×", label: "Faster test cycles vs. manual checklists" },
-  { value: "<$2K", label: "Per month — a fraction of legacy fleet tools" },
+  { value: "<$2K", label: "Per month, a fraction of legacy fleet tools" },
   { value: "100%", label: "Of flights replayable from logged config + telemetry" },
 ];
 
 export function SocialProof() {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto max-w-[1680px] px-12 py-24">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
         <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           04 &nbsp;/&nbsp; The Receipts
         </p>
-        <h2 className="mt-4 max-w-4xl font-display text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+        <h2 className="mt-4 max-w-4xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           Trusted by teams flying real fleets.
         </h2>
 
-        <div className="mt-14 grid grid-cols-4 border-t border-l border-white/10">
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 border-t border-l border-white/10">
           {logos.map((logo) => (
             <div
               key={logo}
@@ -38,7 +38,7 @@ export function SocialProof() {
           ))}
         </div>
 
-        <div className="mt-10 grid grid-cols-4 gap-3">
+        <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
           {stats.map((stat) => (
             <div
               key={stat.label}

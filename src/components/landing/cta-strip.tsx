@@ -14,14 +14,14 @@ export function CtaStrip({
 }) {
   return (
     <section className="border-b border-white/10 bg-black">
-      <div className="mx-auto flex max-w-[1680px] flex-col gap-6 px-12 py-16 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[1680px] flex-col gap-6 px-5 md:px-8 lg:px-12 py-12 md:py-14 lg:py-16 md:flex-row md:items-center md:justify-between">
         <div>
           {eyebrow && (
             <p className="mb-3 font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
               {eyebrow}
             </p>
           )}
-          <h2 className="font-display text-[40px] leading-[1] font-bold tracking-[-0.02em] uppercase">
+          <h2 className="font-display text-[24px] md:text-[32px] lg:text-[40px] leading-[1] font-bold tracking-[-0.02em] uppercase">
             {headline}
           </h2>
         </div>
