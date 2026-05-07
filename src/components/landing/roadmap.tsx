@@ -56,7 +56,7 @@ export function Roadmap() {
                 Hardware &nbsp;/&nbsp; Field Infrastructure
               </p>
               <h3 className="mt-2 font-display text-3xl font-bold tracking-tight uppercase">
-                Airogistic Dock
+                The Dock
               </h3>
               <p className="mt-4 text-base leading-relaxed text-white/70">
                 A drone docking station for persistent operations. Land,

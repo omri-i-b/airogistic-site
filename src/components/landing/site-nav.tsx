@@ -5,7 +5,7 @@ import { asset } from "@/lib/asset";
 
 const links = [
   { href: "/infrastructure", label: "Infrastructure" },
-  { href: "/dock", label: "Airogistic Dock" },
+  { href: "/dock", label: "The Dock" },
   { href: "/company", label: "Company" },
 ];
 

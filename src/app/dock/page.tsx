@@ -19,7 +19,7 @@ import { SiteFooter } from "@/components/landing/site-footer";
 import { CtaStrip } from "@/components/landing/cta-strip";
 
 export const metadata: Metadata = {
-  title: "Airogistic Dock — Airogistic",
+  title: "The Dock — Airogistic",
   description:
     "Autonomous launch, land, recharge, and recovery infrastructure for unmanned vehicle fleets. Persistent operations without rolling a truck.",
 };
