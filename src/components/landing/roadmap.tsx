@@ -32,17 +32,18 @@ export function Roadmap() {
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <div>
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            01 &nbsp;/&nbsp; The Node
+            02 &nbsp;/&nbsp; The Node &nbsp;·&nbsp; Building next
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             One chassis.{" "}
             <span className="text-[#C5E86C]">Two missions</span>.
           </h2>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/70">
-            Coupled-Pole Nodes are forward-deployable, weather-sealed,
-            networked platforms with a patented dual-mast architecture.
-            Same chassis, same software, same field-to-cloud sync,
-            different payload bay loadout for the work in front of it.
+            The hardware half of the same platform. Coupled-Pole Nodes
+            are forward-deployable, weather-sealed, networked platforms
+            with a patented dual-mast architecture. Same software running
+            our customers' fleets today, different payload bay for the
+            work in front of it.
           </p>
         </div>
 

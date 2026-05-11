@@ -12,8 +12,8 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/70">
-          One platform. Two missions. The forward nodes that drones land
-          on, charge from, and report through, wherever they need to be.
+          The readiness software running drone fleets today. The forward
+          nodes those fleets will deploy from tomorrow.
         </p>
 
         <div className="mt-8">
