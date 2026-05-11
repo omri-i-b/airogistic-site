@@ -7,14 +7,13 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-white/10">
       <div className="relative mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-12 lg:pb-14">
         <h1 className="max-w-5xl font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
-          Eliminate drone downtime from{" "}
-          <span className="text-[#C5E86C]">configuration drift</span>,
-          missed preflight steps, and untested flight parameters.
+          Persistent forward infrastructure for{" "}
+          <span className="text-[#C5E86C]">autonomous drone operations</span>.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/70">
-          Know your fleet is flight-ready, before every mission, every
-          time.
+          One platform. Two missions. The forward nodes that drones land
+          on, charge from, and report through, wherever they need to be.
         </p>
 
         <div className="mt-8">

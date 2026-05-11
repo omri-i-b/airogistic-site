@@ -1,26 +1,28 @@
 import Link from "next/link";
-import {
-  Lightning,
-  ShieldCheck,
-  Path,
-  ArrowRight,
-} from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, Crosshair } from "@phosphor-icons/react/dist/ssr";
 
-const dockSpecs = [
+const configs = [
   {
-    icon: Lightning,
-    label: "Autonomous charging",
-    body: "Land, contact, charge, redeploy, no operator in the loop.",
+    tag: "Persistent operations",
+    title: "Schedule, not dispatch.",
+    body: "Autonomous landing, charging, and parameter swap for inspection and ISR fleets. Wind farms, pipelines, power lines, refineries, agriculture. Recurring missions on a clock instead of a truck.",
+    bullets: [
+      "One supervisor, many pre-positioned sites",
+      "Recurring inspection cadences run unattended",
+      "Mission turnaround collapsed",
+      "Every flight pinned to a verified configuration",
+    ],
   },
   {
-    icon: ShieldCheck,
-    label: "Weather-sealed",
-    body: "Field-ready enclosure for rain, dust, and extended deployments.",
-  },
-  {
-    icon: Path,
-    label: "Lattice-aware",
-    body: "Reports availability and battery state directly into your fleet view.",
+    tag: "Perimeter operations",
+    title: "Distributed by design.",
+    body: "Modular payload bays accept sensor stacks, comms relays, and counter-drone effectors. A lattice of nodes around a site becomes a networked, software-defined perimeter.",
+    bullets: [
+      "Modular payload bays per node",
+      "Multiple ready effectors per node",
+      "Effector- and airframe-agnostic",
+      "Lattice-compatible by default",
+    ],
   },
 ];
 
@@ -30,159 +32,65 @@ export function Roadmap() {
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <div>
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            03 &nbsp;/&nbsp; The Hardware
+            01 &nbsp;/&nbsp; The Node
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            The other half of the platform.
+            One chassis.{" "}
+            <span className="text-[#C5E86C]">Two missions</span>.
           </h2>
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/70">
+            Coupled-Pole Nodes are forward-deployable, weather-sealed,
+            networked platforms with a patented dual-mast architecture.
+            Same chassis, same software, same field-to-cloud sync,
+            different payload bay loadout for the work in front of it.
+          </p>
         </div>
 
-        <div className="mt-12">
-          <article className="flex flex-col border border-white/10 bg-[#0a0a0a] lg:flex-row">
-            <div className="relative flex aspect-[16/8] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#0d0d0d] via-black to-[#0d0d0d] lg:w-1/2 lg:border-r lg:border-b-0">
-              <DockGlyph />
-            </div>
-            <div className="p-8 lg:w-1/2 lg:p-10">
-              <p className="font-mono text-[10px] tracking-[0.25em] text-white/40 uppercase">
-                Hardware &nbsp;/&nbsp; Field Infrastructure
+        <div className="mt-12 grid grid-cols-1 gap-3 lg:grid-cols-2">
+          {configs.map((c) => (
+            <article
+              key={c.tag}
+              className="border border-white/10 bg-[#0a0a0a] p-6 sm:p-8 lg:p-10"
+            >
+              <p className="font-mono text-[10px] tracking-[0.25em] text-[#C5E86C] uppercase">
+                {c.tag}
               </p>
-              <h3 className="mt-2 font-display text-3xl font-bold tracking-tight uppercase">
-                Coupled-Pole Stations
+              <h3 className="mt-3 font-display text-2xl font-bold tracking-tight uppercase">
+                {c.title}
               </h3>
-              <p className="mt-4 text-base leading-relaxed text-white/70">
-                A patented dual-mast docking station for persistent
-                operations. Land, charge, swap parameters, and redeploy on
-                a schedule, all without rolling a truck.
+              <p className="mt-4 text-base leading-relaxed text-white/65">
+                {c.body}
               </p>
-
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-white/10 pt-6">
-                {dockSpecs.map((spec) => {
-                  const Icon = spec.icon;
-                  return (
-                    <div key={spec.label}>
-                      <Icon className="h-5 w-5 text-white/85" weight="regular" />
-                      <h4 className="mt-3 font-display text-base font-bold tracking-tight uppercase">
-                        {spec.label}
-                      </h4>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <Link
-                href="/infrastructure"
-                className="mt-8 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
-              >
-                See the stations
-                <ArrowRight className="h-3 w-3" weight="bold" />
-              </Link>
-            </div>
-          </article>
+              <ul className="mt-6 space-y-2.5">
+                {c.bullets.map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-start gap-2.5 text-base text-white/80"
+                  >
+                    <Crosshair
+                      className="mt-1 h-3.5 w-3.5 shrink-0 text-[#C5E86C]"
+                      weight="bold"
+                    />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
+
+        <p className="mt-10 font-mono text-[11px] tracking-[0.25em] text-white/50 uppercase">
+          Same chassis. Same software. Different payload bay.
+        </p>
+
+        <Link
+          href="/infrastructure"
+          className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
+        >
+          See the node
+          <ArrowRight className="h-3 w-3" weight="bold" />
+        </Link>
       </div>
     </section>
-  );
-}
-
-function DockGlyph() {
-  return (
-    <svg
-      viewBox="0 0 320 160"
-      className="h-full w-full"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden
-    >
-      <defs>
-        <pattern
-          id="grid"
-          width="20"
-          height="20"
-          patternUnits="userSpaceOnUse"
-        >
-          <path
-            d="M 20 0 L 0 0 0 20"
-            fill="none"
-            stroke="rgba(255,255,255,0.04)"
-            strokeWidth="1"
-          />
-        </pattern>
-      </defs>
-      <rect width="320" height="160" fill="url(#grid)" />
-
-      {/* dock pad */}
-      <ellipse
-        cx="160"
-        cy="120"
-        rx="80"
-        ry="14"
-        fill="none"
-        stroke="rgba(197,232,108,0.55)"
-        strokeWidth="1.2"
-      />
-      <ellipse
-        cx="160"
-        cy="120"
-        rx="58"
-        ry="10"
-        fill="none"
-        stroke="rgba(197,232,108,0.4)"
-        strokeWidth="1"
-        strokeDasharray="3 4"
-      />
-      <ellipse
-        cx="160"
-        cy="120"
-        rx="34"
-        ry="6"
-        fill="none"
-        stroke="rgba(197,232,108,0.7)"
-        strokeWidth="1.4"
-      />
-      <circle cx="160" cy="120" r="2.5" fill="#C5E86C" />
-
-      {/* drone above */}
-      <g transform="translate(160 60)">
-        <line
-          x1="-22"
-          y1="0"
-          x2="22"
-          y2="0"
-          stroke="rgba(255,255,255,0.85)"
-          strokeWidth="1.4"
-        />
-        <line
-          x1="0"
-          y1="-22"
-          x2="0"
-          y2="22"
-          stroke="rgba(255,255,255,0.85)"
-          strokeWidth="1.4"
-        />
-        <circle cx="-22" cy="0" r="6" fill="rgba(255,255,255,0.92)" />
-        <circle cx="22" cy="0" r="6" fill="rgba(255,255,255,0.92)" />
-        <circle cx="0" cy="-22" r="6" fill="rgba(255,255,255,0.92)" />
-        <circle cx="0" cy="22" r="6" fill="rgba(255,255,255,0.92)" />
-        <rect
-          x="-7"
-          y="-7"
-          width="14"
-          height="14"
-          fill="#0a0a0a"
-          stroke="rgba(255,255,255,0.85)"
-          strokeWidth="1.2"
-        />
-      </g>
-
-      {/* approach lines */}
-      <line
-        x1="160"
-        y1="86"
-        x2="160"
-        y2="116"
-        stroke="rgba(197,232,108,0.5)"
-        strokeWidth="1"
-        strokeDasharray="2 3"
-      />
-    </svg>
   );
 }
