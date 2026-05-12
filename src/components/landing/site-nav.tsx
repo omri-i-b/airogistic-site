@@ -8,7 +8,7 @@ import { asset } from "@/lib/asset";
 
 const links = [
   { href: "/", label: "Software" },
-  { href: "/infrastructure", label: "Coupled-Pole Nodes" },
+  { href: "/infrastructure", label: "Coupled-Pole Stations" },
   { href: "/company", label: "Company" },
 ];
 

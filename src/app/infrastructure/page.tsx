@@ -112,16 +112,17 @@ export default function InfrastructurePage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-14 md:pt-20 lg:pt-24 pb-12 md:pb-16 lg:pb-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
-            Coupled-Pole Nodes &nbsp;·&nbsp; Patented &nbsp;·&nbsp; Austin TX
+            Coupled-Pole Stations &nbsp;·&nbsp; US Patented &nbsp;·&nbsp; Austin TX
           </p>
           <h1 className="mt-5 max-w-5xl font-display text-[34px] md:text-[48px] lg:text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            Forward-deployable infrastructure for the{" "}
-            <span className="text-[#C5E86C]">autonomous future</span>.
+            Customizable, patent-protected{" "}
+            <span className="text-[#C5E86C]">autonomous drone stations</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/70">
-            One chassis. Two missions. Patented dual-mast architecture
-            with modular payload bays. Autonomous launch, land, recharge,
-            and recovery, no operator in the loop.
+            Application-specific, build-to-order platforms available
+            through OEM licensing and B2B agreements. Single or
+            multi-drone operations, from base automated launch to full
+            automated launch, land, and recharge.
           </p>
         </div>
       </section>
