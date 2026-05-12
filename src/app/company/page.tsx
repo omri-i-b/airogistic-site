@@ -15,29 +15,6 @@ export const metadata: Metadata = {
     "Defining the infrastructure of autonomous flight. Founded 2006, Austin TX.",
 };
 
-const milestones = [
-  {
-    year: "2006",
-    body: "Texas-based LLC founded as a spin-off from Appliance Lab and the University of Applied Research Labs. Initial focus: DC battery-powered air collection systems built on an established IoT sensor platform.",
-  },
-  {
-    year: "2011",
-    body: "Began developing embedded drone flight controllers. DC airflow controllers and motors adapted from air-sampling applications for use in multi-rotor drones.",
-  },
-  {
-    year: "2012",
-    body: "First Coupled-Pole drone test stands designed and operated.",
-  },
-  {
-    year: "2014",
-    body: "Patents filed for Coupled-Pole drone launch and landing stations. Patent protections secured ahead of broader autonomous-drone market growth.",
-  },
-  {
-    year: "2019+",
-    body: "Continued refinement of station technologies, test infrastructure, and applications. As regulations ease and full-autonomy demand grows, the company is positioned to commercialize across logistics, defense, and field operations.",
-  },
-];
-
 const contactCards = [
   {
     icon: MapPin,
@@ -109,34 +86,6 @@ export default function CompanyPage() {
               and communications across drone fleets, stations, and
               systems, concept to production.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* History */}
-      <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
-          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            03 &nbsp;/&nbsp; History
-          </p>
-          <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-            Two decades of building the dock.
-          </h2>
-
-          <div className="mt-12 border-t border-white/10">
-            {milestones.map((m) => (
-              <div
-                key={m.year}
-                className="grid grid-cols-1 gap-6 border-b border-white/10 py-8 lg:grid-cols-[180px_1fr]"
-              >
-                <div className="font-display text-3xl font-bold tracking-tight text-[#C5E86C]">
-                  {m.year}
-                </div>
-                <p className="max-w-3xl text-base leading-relaxed text-white/70">
-                  {m.body}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
