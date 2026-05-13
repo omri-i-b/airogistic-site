@@ -37,9 +37,8 @@ export function FeatureIntro() {
             Available today
           </span>
         </div>
-        <h2 className="mt-4 max-w-4xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Most drone program delays aren&rsquo;t mechanical.
-          <br />
+        <h2 className="mt-4 max-w-6xl text-balance font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+          Most drone program delays aren&rsquo;t mechanical.{" "}
           <span className="text-white/45">They&rsquo;re </span>
           <span className="text-[#C5E86C]">procedural</span>
           <span className="text-white/45">.</span>
