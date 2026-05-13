@@ -116,8 +116,8 @@ export default function CompanyPage() {
           <article className="mt-3 flex items-start gap-4 border border-white/10 bg-[#0a0a0a] p-8">
             <Buildings className="h-6 w-6 shrink-0 text-white/85" weight="regular" />
             <div>
-              <p className="font-mono text-[10px] tracking-[0.25em] text-white/40 uppercase">
-                Investors
+              <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+                <span className="text-[#C5E86C]">—</span> Investors
               </p>
               <h3 className="mt-2 font-display text-xl font-bold tracking-tight uppercase">
                 Investor materials are in progress.

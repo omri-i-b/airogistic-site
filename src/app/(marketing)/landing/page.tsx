@@ -4,7 +4,7 @@ import { FeatureIntro } from "@/components/landing/feature-intro";
 import { FeatureCards } from "@/components/landing/feature-cards";
 import { FeatureGrid } from "@/components/landing/feature-grid";
 import { Roadmap } from "@/components/landing/roadmap";
-import { ContactForm } from "@/components/landing/contact-form";
+import { CtaStrip } from "@/components/landing/cta-strip";
 import { SiteFooter } from "@/components/landing/site-footer";
 
 export default function LandingPage() {
@@ -16,7 +16,10 @@ export default function LandingPage() {
       <FeatureCards />
       <FeatureGrid />
       <Roadmap />
-      <ContactForm />
+      <CtaStrip
+        eyebrow="Talk to the team"
+        headline="Get on the early-access list."
+      />
       <SiteFooter />
     </>
   );

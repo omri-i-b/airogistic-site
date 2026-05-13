@@ -5,7 +5,7 @@ export function CtaStrip({
   eyebrow,
   headline,
   cta = "Book a demo",
-  href = "/#contact",
+  href = "#contact",
 }: {
   eyebrow?: string;
   headline: string;

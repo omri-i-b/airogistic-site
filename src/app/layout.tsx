@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import { ContactModal } from "@/components/landing/contact-modal";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,6 +39,7 @@ export default function RootLayout({
     >
       <body className="h-full bg-black font-sans text-white/90">
         {children}
+        <ContactModal />
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import { ArrowRight, List, X } from "@phosphor-icons/react/dist/ssr";
 import { asset } from "@/lib/asset";
 
 const links = [
-  { href: "/", label: "Software" },
+  { href: "/", label: "Fleet Software" },
   { href: "/infrastructure", label: "Coupled-Pole Stations" },
   { href: "/company", label: "Company" },
 ];
@@ -50,7 +50,7 @@ export function SiteNav() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/#contact"
+            href="#contact"
             className="hidden items-center gap-1.5 bg-white px-4 py-2 font-mono text-[11px] tracking-[0.25em] text-black uppercase transition-colors hover:bg-white/90 sm:inline-flex"
           >
             Book a demo
@@ -87,7 +87,7 @@ export function SiteNav() {
               </Link>
             ))}
             <Link
-              href="/#contact"
+              href="#contact"
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex items-center justify-center gap-1.5 bg-white px-4 py-3 font-mono text-[11px] tracking-[0.25em] text-black uppercase transition-colors hover:bg-white/90"
             >
