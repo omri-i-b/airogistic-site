@@ -125,7 +125,7 @@ export default function InfrastructurePage() {
 
             {/* Right: dock product image */}
             <div className="relative -mx-5 md:-mx-8 lg:mx-0">
-              <div className="relative aspect-[5/6] w-full overflow-hidden bg-black">
+              <div className="relative aspect-[3/2] w-full overflow-hidden bg-black">
                 <Image
                   src={asset("/coupled-pole-station.png")}
                   alt="Coupled-Pole Station with stacked drones"
