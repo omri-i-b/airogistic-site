@@ -12,8 +12,8 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/70">
-          The readiness software running drone fleets today. The forward
-          nodes those fleets will deploy from tomorrow.
+          The readiness software running drone fleets today. The
+          Coupled-Pole Stations those fleets will deploy from tomorrow.
         </p>
 
         <div className="mt-8">

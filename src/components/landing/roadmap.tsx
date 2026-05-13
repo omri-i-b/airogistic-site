@@ -37,9 +37,15 @@ export function Roadmap() {
     <section className="border-b border-white/10 bg-black">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <div>
-          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            02 &nbsp;/&nbsp; The Stations &nbsp;·&nbsp; Building next
-          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+              02 &nbsp;/&nbsp; The Stations
+            </p>
+            <span className="inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
+              In development
+            </span>
+          </div>
           <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             One platform.{" "}
             <span className="text-[#C5E86C]">Two stations</span>.
