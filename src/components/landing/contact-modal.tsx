@@ -34,6 +34,26 @@ export function ContactModal() {
     return () => window.removeEventListener("hashchange", check);
   }, []);
 
+  // Click delegation: any element with href ending in "#contact"
+  // or data-modal="contact" opens the modal, regardless of router behavior.
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (!el) return;
+      const trigger = el.closest<HTMLElement>(
+        'a[href$="#contact"], [data-modal="contact"]',
+      );
+      if (!trigger) return;
+      e.preventDefault();
+      setOpen(true);
+      if (window.location.hash !== "#contact") {
+        history.pushState(null, "", "#contact");
+      }
+    };
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, []);
+
   // Lock body scroll while open + esc to close
   useEffect(() => {
     if (!open) return;
