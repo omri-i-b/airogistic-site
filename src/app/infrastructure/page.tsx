@@ -70,11 +70,11 @@ export default function InfrastructurePage() {
       <SiteNav />
 
       {/* Hero */}
-      <section className="border-b border-white/10">
-        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-12 md:pb-16 lg:pb-20">
-          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-14 lg:pb-16">
+          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-12">
             {/* Left: copy + tiles */}
-            <div>
+            <div className="flex flex-col">
               <div className="flex flex-wrap items-center gap-3">
                 <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
                   <span className="text-[#C5E86C]">—</span>{" "}
@@ -86,20 +86,19 @@ export default function InfrastructurePage() {
                 </span>
               </div>
 
-              <h1 className="mt-5 font-display text-[34px] md:text-[44px] lg:text-[56px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+              <h1 className="mt-5 font-display text-[44px] sm:text-[56px] md:text-[68px] lg:text-[80px] xl:text-[96px] leading-[0.92] font-bold tracking-[-0.025em] uppercase">
                 Launch. Land. Recharge.{" "}
-                <span className="text-[#C5E86C]">Repeat</span>,
-                automatically.
+                <span className="text-[#C5E86C]">Repeat</span>.
               </h1>
-              <p className="mt-5 max-w-xl text-base lg:text-lg text-white/70">
+              <p className="mt-6 max-w-xl text-base lg:text-lg text-white/70">
                 Patented dual-mast docking stations. Application-specific,
                 build-to-order, OEM and B2B. Single drone to stacked
                 swarm, from base launch to full launch, land, and
                 recharge.
               </p>
 
-              {/* Feature tiles */}
-              <div className="mt-8 grid grid-cols-2 gap-3 border-t border-white/10 pt-8 sm:grid-cols-2 lg:grid-cols-2">
+              {/* Feature tiles, 4-up horizontal */}
+              <div className="mt-auto grid grid-cols-2 gap-3 pt-10 sm:grid-cols-4">
                 {tiles.map((t) => {
                   const Icon = t.icon;
                   return (
@@ -111,7 +110,7 @@ export default function InfrastructurePage() {
                         className="h-5 w-5 text-[#C5E86C]"
                         weight="regular"
                       />
-                      <h3 className="mt-3 font-display text-sm font-bold tracking-tight uppercase">
+                      <h3 className="mt-3 font-display text-sm font-bold leading-tight tracking-tight uppercase">
                         {t.label}
                       </h3>
                       <p className="mt-1.5 text-xs leading-relaxed text-white/55">
@@ -123,18 +122,16 @@ export default function InfrastructurePage() {
               </div>
             </div>
 
-            {/* Right: dock product image */}
-            <div className="relative -mx-5 md:-mx-8 lg:mx-0">
-              <div className="relative aspect-[3/2] w-full overflow-hidden bg-black">
-                <Image
-                  src={asset("/coupled-pole-station.png")}
-                  alt="Coupled-Pole Station with stacked drones"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-contain"
-                />
-              </div>
+            {/* Right: dock product image, full hero height */}
+            <div className="relative -mx-5 min-h-[420px] md:-mx-8 md:min-h-[520px] lg:mx-0 lg:-mr-12 lg:min-h-0 xl:-mr-16">
+              <Image
+                src={asset("/coupled-pole-station.png")}
+                alt="Coupled-Pole Station with stacked drones"
+                fill
+                priority
+                sizes="(min-width: 1024px) 55vw, 100vw"
+                className="object-cover object-center lg:object-right"
+              />
             </div>
           </div>
         </div>
