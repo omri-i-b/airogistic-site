@@ -72,7 +72,7 @@ export default function InfrastructurePage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-14 lg:pb-16">
-          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-12">
+          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[0.85fr_1.25fr] lg:gap-12">
             {/* Left: copy + tiles */}
             <div className="flex flex-col">
               <div className="flex flex-wrap items-center gap-3">
@@ -123,14 +123,14 @@ export default function InfrastructurePage() {
             </div>
 
             {/* Right: dock product image, full hero height */}
-            <div className="relative -mx-5 min-h-[420px] md:-mx-8 md:min-h-[520px] lg:mx-0 lg:-mr-12 lg:min-h-0 xl:-mr-16">
+            <div className="relative -mx-5 min-h-[420px] md:-mx-8 md:min-h-[600px] lg:mx-0 lg:-mr-12 lg:min-h-[720px] xl:-mr-20 xl:min-h-[820px]">
               <Image
                 src={asset("/coupled-pole-station.png")}
                 alt="Coupled-Pole Station with stacked drones"
                 fill
                 priority
-                sizes="(min-width: 1024px) 55vw, 100vw"
-                className="object-cover object-center lg:object-right"
+                sizes="(min-width: 1024px) 60vw, 100vw"
+                className="object-cover object-center"
               />
             </div>
           </div>
