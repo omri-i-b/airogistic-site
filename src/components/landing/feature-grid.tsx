@@ -45,7 +45,7 @@ export function FeatureGrid() {
     <section className="border-b border-white/10">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="mb-4 font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-          The Platform
+          <span className="text-[#C5E86C]">—</span> The Platform
         </p>
         <h2 className="max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           Fleet, parameters, tests, missions, one system.

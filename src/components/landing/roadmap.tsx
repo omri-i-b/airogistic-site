@@ -7,7 +7,7 @@ export function Roadmap() {
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-10 md:py-14 lg:py-16">
         <div className="flex flex-wrap items-center gap-3">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            02 &nbsp;/&nbsp; The Stations
+            <span className="text-[#C5E86C]">—</span> The Stations
           </p>
           <span className="inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
             <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />

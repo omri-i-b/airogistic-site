@@ -96,10 +96,7 @@ export function ContactForm() {
       <div className="relative mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-20 lg:py-28">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
-            <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              03 &nbsp;/&nbsp; Get Started
-            </p>
-            <h2 className="mt-4 font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            <h2 className="font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
               Talk to the team.
             </h2>
             <p className="mt-6 max-w-md text-base text-white/60">
