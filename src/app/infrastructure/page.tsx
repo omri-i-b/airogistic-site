@@ -86,7 +86,7 @@ export default function InfrastructurePage() {
                 </span>
               </div>
 
-              <h1 className="mt-5 font-display text-[44px] sm:text-[56px] md:text-[68px] lg:text-[80px] xl:text-[96px] leading-[0.92] font-bold tracking-[-0.025em] uppercase">
+              <h1 className="mt-5 font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
                 Launch. Land. Recharge.{" "}
                 <span className="text-[#C5E86C]">Repeat</span>.
               </h1>
