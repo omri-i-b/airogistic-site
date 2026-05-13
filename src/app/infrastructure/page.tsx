@@ -72,9 +72,9 @@ export default function InfrastructurePage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-14 lg:pb-16">
-          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[0.85fr_1.25fr] lg:gap-12">
+          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[0.85fr_1.25fr] lg:gap-12">
             {/* Left: copy + tiles */}
-            <div className="flex flex-col">
+            <div>
               <div className="flex flex-wrap items-center gap-3">
                 <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
                   <span className="text-[#C5E86C]">—</span>{" "}
@@ -98,7 +98,7 @@ export default function InfrastructurePage() {
               </p>
 
               {/* Feature tiles, 4-up horizontal */}
-              <div className="mt-auto grid grid-cols-2 gap-3 pt-10 sm:grid-cols-4">
+              <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
                 {tiles.map((t) => {
                   const Icon = t.icon;
                   return (
