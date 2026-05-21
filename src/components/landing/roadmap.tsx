@@ -5,11 +5,7 @@ export function Roadmap() {
   return (
     <section className="border-b border-white/10 bg-black">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-10 md:py-14 lg:py-16">
-        <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-          <span className="text-[#C5E86C]">—</span> Our Vision
-        </p>
-
-        <h2 className="mt-4 max-w-3xl font-display text-[24px] md:text-[28px] lg:text-[32px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+        <h2 className="max-w-3xl font-display text-[24px] md:text-[28px] lg:text-[32px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           A dock for the swarm to come home to.
         </h2>
 

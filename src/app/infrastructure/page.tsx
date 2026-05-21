@@ -114,7 +114,6 @@ export default function InfrastructurePage() {
       </section>
 
       <CtaStrip
-        eyebrow="Talk to the team"
         headline="Want a preview? Reach out."
       />
 

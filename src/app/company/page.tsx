@@ -115,7 +115,6 @@ export default function CompanyPage() {
       </section>
 
       <CtaStrip
-        eyebrow="Talk to the team"
         headline="Start a conversation."
       />
 

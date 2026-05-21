@@ -17,7 +17,6 @@ export default function LandingPage() {
       <FeatureGrid />
       <Roadmap />
       <CtaStrip
-        eyebrow="Talk to the team"
         headline="Get on the early-access list."
       />
       <SiteFooter />
