@@ -51,18 +51,7 @@ export default function InfrastructurePage() {
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[0.85fr_1.25fr] lg:gap-12">
             {/* Left: copy + tiles */}
             <div className="flex flex-col">
-              <div className="flex flex-wrap items-center gap-3">
-                <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
-                  <span className="text-[#C5E86C]">—</span>{" "}
-                  Coupled-Pole Station
-                </p>
-                <span className="inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
-                  <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-                  On the roadmap
-                </span>
-              </div>
-
-              <h1 className="mt-5 font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
+              <h1 className="font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
                 A dock for the{" "}
                 <span className="text-[#C5E86C]">swarm</span> to come home
                 to.
