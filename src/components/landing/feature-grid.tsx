@@ -1,5 +1,5 @@
 /* Hallmark · genre: atmospheric-technical · design-system: DESIGN.md · designed-as-app */
-/* Hallmark · pre-emit critique: P5 H5 E4 S4 R5 V5 */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
 
 const features = [
   {
@@ -39,24 +39,26 @@ export function FeatureGrid() {
           Swarm, parameters, tests, missions, one system.
         </h2>
 
-        <ol className="mt-12 md:mt-16 lg:mt-20 border-t border-[var(--color-rule)]">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-16">
           {features.map((feat, i) => (
-            <li
+            <article
               key={feat.title}
-              className="grid grid-cols-[56px_minmax(0,1fr)] items-baseline gap-x-4 gap-y-2 border-b border-[var(--color-rule)] py-6 md:grid-cols-[80px_minmax(0,1fr)_minmax(0,2fr)] md:gap-x-8 md:py-8 lg:py-10"
+              className="flex items-start gap-4 border-b border-[var(--color-rule)] py-6 md:gap-5 md:py-7"
             >
-              <span className="font-display text-3xl md:text-4xl font-bold text-[var(--color-accent)] tabular-nums">
+              <span className="font-display text-2xl font-bold leading-none text-[var(--color-accent)] tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="font-display text-lg md:text-xl font-bold tracking-tight uppercase">
-                {feat.title}
-              </h3>
-              <p className="col-start-2 md:col-start-3 text-base leading-relaxed text-white/65">
-                {feat.body}
-              </p>
-            </li>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-display text-lg font-bold leading-tight tracking-tight uppercase">
+                  {feat.title}
+                </h3>
+                <p className="mt-2 max-w-md text-base leading-relaxed text-white/65">
+                  {feat.body}
+                </p>
+              </div>
+            </article>
           ))}
-        </ol>
+        </div>
       </div>
     </section>
   );
