@@ -127,7 +127,7 @@ export default function InfrastructurePage() {
       <section className="border-b border-white/10 bg-black">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            <span className="text-[#C5E86C]">—</span> Why we&rsquo;re building it
+            <span className="mr-1.5 text-[#C5E86C]">—</span>Why we&rsquo;re building it
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             Software alone hits a ceiling.

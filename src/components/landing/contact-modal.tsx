@@ -158,7 +158,7 @@ export function ContactModal() {
 
         <div className="border-b border-white/10 px-6 py-5 sm:px-8">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            <span className="text-[#C5E86C]">—</span> Talk to the team
+            <span className="mr-1.5 text-[#C5E86C]">—</span>Talk to the team
           </p>
           <h3 className="mt-2 font-display text-2xl font-bold tracking-tight uppercase">
             Book a demo

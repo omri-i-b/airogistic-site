@@ -55,7 +55,7 @@ export default function CompanyPage() {
         <div className="mx-auto grid max-w-[1680px] grid-cols-1 gap-12 px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              <span className="text-[#C5E86C]">—</span> Vision
+              <span className="mr-1.5 text-[#C5E86C]">—</span>Vision
             </p>
             <h2 className="mt-4 font-display text-[22px] md:text-[28px] lg:text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
               From 2D to 3D.
@@ -71,7 +71,7 @@ export default function CompanyPage() {
           </div>
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              <span className="text-[#C5E86C]">—</span> Mission
+              <span className="mr-1.5 text-[#C5E86C]">—</span>Mission
             </p>
             <h2 className="mt-4 font-display text-[22px] md:text-[28px] lg:text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
               Patented stations. Real flight cycles.
