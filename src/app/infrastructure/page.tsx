@@ -5,6 +5,9 @@ import {
   Lightning,
   Pulse,
   Wind,
+  HandPalm,
+  Clock,
+  GitBranch,
 } from "@phosphor-icons/react/dist/ssr";
 import { SiteNav } from "@/components/landing/site-nav";
 import { SiteFooter } from "@/components/landing/site-footer";
@@ -16,6 +19,24 @@ export const metadata: Metadata = {
   description:
     "Forward-deployable docking stations for autonomous drone swarms. In development.",
 };
+
+const reasons = [
+  {
+    icon: HandPalm,
+    title: "Software can't fly a drone home",
+    body: "Manual launch and recovery still caps operating tempo. Until the drone can land and redeploy itself, the program is bottlenecked on the people standing on the field.",
+  },
+  {
+    icon: Clock,
+    title: "Persistence beats presence",
+    body: "Swarms get valuable when they run continuously, on schedule, not just in human-staffed windows. The dock turns drone ops from dispatch to cadence.",
+  },
+  {
+    icon: GitBranch,
+    title: "One discipline, end to end",
+    body: "The hardware ships on the same parameter version control, test automation, and field-to-cloud sync the software already runs today. No second platform to learn.",
+  },
+];
 
 const tiles = [
   {
@@ -98,6 +119,45 @@ export default function InfrastructurePage() {
                 className="object-cover object-center"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why we're building it */}
+      <section className="border-b border-white/10 bg-black">
+        <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-20">
+          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+            <span className="text-[#C5E86C]">—</span> Why we&rsquo;re building it
+          </p>
+          <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
+            Software alone hits a ceiling.
+          </h2>
+          <p className="mt-5 max-w-3xl text-base lg:text-lg leading-relaxed text-white/70">
+            We&rsquo;ve spent years on the discipline that runs drone
+            swarms in software, every parameter versioned, every test
+            automated, every mission observable. But software can only go
+            so far while every flight still needs a human to launch and
+            recover. The dock removes that ceiling.
+          </p>
+
+          <div className="mt-10 grid grid-cols-1 gap-3 md:grid-cols-3">
+            {reasons.map((r) => {
+              const Icon = r.icon;
+              return (
+                <article
+                  key={r.title}
+                  className="border border-white/10 bg-[#0a0a0a] p-6 sm:p-8"
+                >
+                  <Icon className="h-6 w-6 text-[#C5E86C]" weight="regular" />
+                  <h3 className="mt-5 font-display text-lg font-bold tracking-tight uppercase">
+                    {r.title}
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed text-white/65">
+                    {r.body}
+                  </p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
