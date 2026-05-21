@@ -5,15 +5,9 @@ export function Roadmap() {
   return (
     <section className="border-b border-white/10 bg-black">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-10 md:py-14 lg:py-16">
-        <div className="flex flex-wrap items-center gap-3">
-          <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            <span className="text-[#C5E86C]">—</span> The Hardware
-          </p>
-          <span className="inline-flex items-center gap-1.5 border border-amber-300/40 bg-amber-300/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-amber-200 uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-            On the roadmap
-          </span>
-        </div>
+        <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+          <span className="text-[#C5E86C]">—</span> Our Vision
+        </p>
 
         <h2 className="mt-4 max-w-3xl font-display text-[24px] md:text-[28px] lg:text-[32px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           A dock for the swarm to come home to.
