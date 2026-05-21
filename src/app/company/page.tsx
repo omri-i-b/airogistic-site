@@ -41,7 +41,7 @@ export default function CompanyPage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-14 md:pt-20 lg:pt-24 pb-12 md:pb-16 lg:pb-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
-            About Airogistic &nbsp;·&nbsp; Founded 2006
+            Founded 2006
           </p>
           <h1 className="mt-5 max-w-5xl font-display text-[34px] md:text-[48px] lg:text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             Defining the infrastructure of{" "}
