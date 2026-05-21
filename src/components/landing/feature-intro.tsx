@@ -7,18 +7,18 @@ import {
 const columns = [
   {
     icon: Sliders,
-    title: "Configuration drift grounds fleets",
-    body: "Parameters get tweaked between flights, never reviewed, never rolled back. Mission day comes and the aircraft fails its preflight, or worse, doesn't get one.",
+    title: "Configuration drift across the swarm",
+    body: "Parameters get tweaked on one vehicle, never propagated to the rest. Swarm day comes and the vehicles fly inconsistent configs, or worse, fail their preflight one by one.",
   },
   {
     icon: ArrowsCounterClockwise,
-    title: "Tests don't repeat",
-    body: "Manual checklists drift. The flight that passed last week fails today and nobody knows what changed.",
+    title: "Tests that don't repeat",
+    body: "Manual checklists drift across the fleet. The flight that passed on tail #3 last week fails on tail #7 today and nobody knows what changed.",
   },
   {
     icon: LinkBreak,
     title: "Field and cloud are split",
-    body: "Field teams log to spreadsheets. HQ has no view. Nothing lines up when something goes wrong.",
+    body: "Field operators log to spreadsheets. HQ has no swarm-wide view. Nothing lines up when something goes wrong mid-mission.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function FeatureIntro() {
           <span className="text-[#C5E86C]">—</span> The Problem
         </p>
         <h2 className="mt-4 max-w-6xl text-balance font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Most drone program delays aren&rsquo;t mechanical.{" "}
+          Most swarm program delays aren&rsquo;t mechanical.{" "}
           <span className="text-white/45">They&rsquo;re </span>
           <span className="text-[#C5E86C]">procedural</span>
           <span className="text-white/45">.</span>

@@ -10,33 +10,33 @@ import {
 const features = [
   {
     icon: AirplaneTilt,
-    title: "Fleet registry",
-    body: "Vehicles, ground stations, types, tracked in one place.",
+    title: "Swarm registry",
+    body: "Vehicles, ground stations, and types, all tracked. See the whole swarm in one place.",
   },
   {
     icon: GitBranch,
     title: "Parameter version control",
-    body: "Every flight pinned to a known-good config. No surprise changes.",
+    body: "Every flight, every vehicle, pinned to a known-good config. No surprise drift across the swarm.",
   },
   {
     icon: CheckSquare,
-    title: "Pre-flight test suites",
-    body: "Block takeoff until every check passes. All scriptable.",
+    title: "Per-vehicle pre-flight",
+    body: "Block takeoff until every check passes. Sensors, motors, GPS lock, comms, geofence, all scriptable.",
   },
   {
     icon: Broadcast,
-    title: "In-flight assertions",
-    body: "Telemetry checks that fire mid-mission and abort on anomaly.",
+    title: "Swarm-aware in-flight assertions",
+    body: "Telemetry checks that fire mid-mission. Auto-abort or flag anomalies before they propagate.",
   },
   {
     icon: Cube,
     title: "Sim + hardware",
-    body: "Same test definitions run in your simulator and on real fleets.",
+    body: "Same test definitions run in your simulator and against the live swarm. No translation layer.",
   },
   {
     icon: ListChecks,
-    title: "Mission workflows",
-    body: "Sequence steps and tests. The base layer for AI-driven missions.",
+    title: "Swarm mission orchestration",
+    body: "Compose missions as sequences of tests and steps. Coordinate across every vehicle in the swarm.",
   },
 ];
 
@@ -48,9 +48,9 @@ export function FeatureGrid() {
           <span className="text-[#C5E86C]">—</span> The Platform
         </p>
         <h2 className="max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
-          Fleet, parameters, tests, missions, one system.
+          Swarm, parameters, tests, missions, one system.
         </h2>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 lg:gap-x-12 gap-y-10 border-t border-white/10 pt-10">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-12 gap-y-10 border-t border-white/10 pt-10">
           {features.map((feat) => {
             const Icon = feat.icon;
             return (
@@ -59,7 +59,7 @@ export function FeatureGrid() {
                 <h3 className="mt-4 font-display text-lg font-bold tracking-tight uppercase">
                   {feat.title}
                 </h3>
-                <p className="mt-2 text-base leading-relaxed text-white/65">
+                <p className="mt-2 text-base leading-relaxed text-white/70">
                   {feat.body}
                 </p>
               </div>

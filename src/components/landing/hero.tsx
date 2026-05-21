@@ -18,13 +18,14 @@ export function Hero() {
         </div>
 
         <h1 className="mt-5 max-w-5xl font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
-          Persistent forward infrastructure for{" "}
-          <span className="text-[#C5E86C]">autonomous drone operations</span>.
+          The software platform for{" "}
+          <span className="text-[#C5E86C]">autonomous drone swarms</span>.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/70">
-          The readiness software running drone fleets today. The
-          Coupled-Pole Stations those fleets will deploy from tomorrow.
+          Fleet, parameters, tests, and missions, coordinated across
+          every vehicle in the swarm. Running with paying operators
+          today.
         </p>
 
         <div className="mt-8">
@@ -37,16 +38,16 @@ export function Hero() {
           </Link>
         </div>
 
-        <div className="mt-12 md:mt-16 overflow-hidden border border-white/15 bg-[#0a0a0a] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
+        <div className="mx-auto mt-12 max-w-4xl overflow-hidden border border-white/15 bg-[#0a0a0a] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)] md:mt-16">
           <div className="flex items-center gap-1.5 border-b border-white/10 bg-black/40 px-4 py-2.5 font-mono text-[10px] tracking-[0.2em] text-white/45 uppercase">
             <span className="h-2 w-2 rounded-full bg-[#FF5F57]" />
             <span className="h-2 w-2 rounded-full bg-[#FEBC2E]" />
             <span className="h-2 w-2 rounded-full bg-[#28C840]" />
-            <span className="ml-3">app.airogistic.com &nbsp;/&nbsp; mission console</span>
+            <span className="ml-3">app.airogistic.com &nbsp;/&nbsp; swarm console</span>
           </div>
           <Image
             src={asset("/airogistic-dashboard.png")}
-            alt="Airogistic mission console, flight map, fleet registry, and live test harness"
+            alt="Airogistic swarm console, flight map, fleet registry, and live test harness"
             width={1727}
             height={911}
             priority

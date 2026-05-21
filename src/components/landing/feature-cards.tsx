@@ -7,18 +7,18 @@ import {
 const cards = [
   {
     icon: GitBranch,
-    title: "Version every parameter",
-    body: "Diff, review, and roll back configs the way your engineers ship code.",
+    title: "Version every parameter, across every vehicle",
+    body: "Diff, review, and roll back swarm configs the way your engineers ship code.",
   },
   {
     icon: CheckCircle,
-    title: "Automate every test",
-    body: "Pre-flight, in-flight, post-flight. Scriptable, repeatable, history-backed.",
+    title: "Automate every test, every aircraft",
+    body: "Pre-flight, in-flight, post-flight. Scriptable, repeatable, history-backed, swarm-wide.",
   },
   {
     icon: ArrowsClockwise,
     title: "Field-first, cloud-synced",
-    body: "Run locally without internet. Reconcile back to cloud when you're online.",
+    body: "Run locally at the test site without internet. Reconcile back to cloud when you're online.",
   },
 ];
 
