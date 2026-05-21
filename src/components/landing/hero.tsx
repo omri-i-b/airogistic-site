@@ -13,8 +13,8 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-white/70">
-          Fleet, parameters, tests, and missions, coordinated across
-          every vehicle in the swarm. Running with paying operators
+          Run your swarm the way your team ships software, versioned,
+          tested, and observable. In production with drone operators
           today.
         </p>
 
