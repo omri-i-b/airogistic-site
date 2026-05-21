@@ -74,7 +74,7 @@ export default function InfrastructurePage() {
             <div className="flex flex-col">
               <h1 className="font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
                 A dock for the{" "}
-                <span className="text-[#C5E86C]">swarm</span> to come home
+                <span className="text-[var(--color-accent)]">swarm</span> to come home
                 to.
               </h1>
               <p className="mt-6 max-w-xl text-base lg:text-lg text-white/70">
@@ -90,10 +90,10 @@ export default function InfrastructurePage() {
                   return (
                     <div
                       key={t.label}
-                      className="border border-white/10 bg-[#0a0a0a] p-4"
+                      className="border border-white/10 bg-[var(--color-paper-2)] p-4"
                     >
                       <Icon
-                        className="h-5 w-5 text-[#C5E86C]"
+                        className="h-5 w-5 text-[var(--color-accent)]"
                         weight="regular"
                       />
                       <h3 className="mt-3 font-display text-sm font-bold leading-tight tracking-tight uppercase">
@@ -127,7 +127,7 @@ export default function InfrastructurePage() {
       <section className="border-b border-white/10 bg-black">
         <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-20">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            <span className="mr-1.5 text-[#C5E86C]">—</span>Why we&rsquo;re building it
+            <span className="mr-1.5 text-[var(--color-accent)]">—</span>Why we&rsquo;re building it
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             Software alone hits a ceiling.
@@ -146,9 +146,9 @@ export default function InfrastructurePage() {
               return (
                 <article
                   key={r.title}
-                  className="border border-white/10 bg-[#0a0a0a] p-6 sm:p-8"
+                  className="border border-white/10 bg-[var(--color-paper-2)] p-6 sm:p-8"
                 >
-                  <Icon className="h-6 w-6 text-[#C5E86C]" weight="regular" />
+                  <Icon className="h-6 w-6 text-[var(--color-accent)]" weight="regular" />
                   <h3 className="mt-5 font-display text-lg font-bold tracking-tight uppercase">
                     {r.title}
                   </h3>

@@ -27,12 +27,12 @@ export function FeatureIntro() {
     <section className="border-b border-white/10 bg-black">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-          <span className="mr-1.5 text-[#C5E86C]">—</span>The Problem
+          <span className="mr-1.5 text-[var(--color-accent)]">—</span>The Problem
         </p>
         <h2 className="mt-4 max-w-6xl text-balance font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           Most swarm program delays aren&rsquo;t mechanical.{" "}
           <span className="text-white/45">They&rsquo;re </span>
-          <span className="text-[#C5E86C]">procedural</span>
+          <span className="text-[var(--color-accent)]">procedural</span>
           <span className="text-white/45">.</span>
         </h2>
         <div className="mt-12 grid grid-cols-1 gap-10 border-t border-white/10 pt-10 sm:grid-cols-2 lg:grid-cols-3">

@@ -45,7 +45,7 @@ export default function CompanyPage() {
           </p>
           <h1 className="mt-5 max-w-5xl font-display text-[34px] md:text-[48px] lg:text-[64px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
             Defining the infrastructure of{" "}
-            <span className="text-[#C5E86C]">autonomous flight</span>.
+            <span className="text-[var(--color-accent)]">autonomous flight</span>.
           </h1>
         </div>
       </section>
@@ -55,7 +55,7 @@ export default function CompanyPage() {
         <div className="mx-auto grid max-w-[1680px] grid-cols-1 gap-12 px-5 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2">
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              <span className="mr-1.5 text-[#C5E86C]">—</span>Vision
+              <span className="mr-1.5 text-[var(--color-accent)]">—</span>Vision
             </p>
             <h2 className="mt-4 font-display text-[22px] md:text-[28px] lg:text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
               From 2D to 3D.
@@ -71,7 +71,7 @@ export default function CompanyPage() {
           </div>
           <div>
             <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-              <span className="mr-1.5 text-[#C5E86C]">—</span>Mission
+              <span className="mr-1.5 text-[var(--color-accent)]">—</span>Mission
             </p>
             <h2 className="mt-4 font-display text-[22px] md:text-[28px] lg:text-[36px] leading-[1] font-bold tracking-[-0.02em] uppercase">
               Patented stations. Real flight cycles.
@@ -98,7 +98,7 @@ export default function CompanyPage() {
               return (
                 <article
                   key={c.label}
-                  className="border border-white/10 bg-[#0a0a0a] p-8"
+                  className="border border-white/10 bg-[var(--color-paper-2)] p-8"
                 >
                   <Icon className="h-6 w-6 text-white/85" weight="regular" />
                   <h3 className="mt-6 font-display text-xl font-bold tracking-tight uppercase">

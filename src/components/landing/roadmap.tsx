@@ -17,7 +17,7 @@ export function Roadmap() {
 
         <Link
           href="/infrastructure"
-          className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
+          className="mt-6 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-[0.25em] text-[var(--color-accent)] uppercase transition-opacity hover:opacity-80"
         >
           See the dock
           <ArrowRight className="h-3 w-3" weight="bold" />

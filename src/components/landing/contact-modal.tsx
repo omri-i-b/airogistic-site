@@ -144,7 +144,7 @@ export function ContactModal() {
       onClick={close}
     >
       <div
-        className="relative w-full max-w-xl border border-white/15 bg-[#0a0a0a]"
+        className="relative w-full max-w-xl border border-white/15 bg-[var(--color-paper-2)]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -158,7 +158,7 @@ export function ContactModal() {
 
         <div className="border-b border-white/10 px-6 py-5 sm:px-8">
           <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
-            <span className="mr-1.5 text-[#C5E86C]">—</span>Talk to the team
+            <span className="mr-1.5 text-[var(--color-accent)]">—</span>Talk to the team
           </p>
           <h3 className="mt-2 font-display text-2xl font-bold tracking-tight uppercase">
             Book a demo
@@ -169,7 +169,7 @@ export function ContactModal() {
           {state === "success" ? (
             <div className="flex flex-col items-start py-4">
               <CheckCircle
-                className="h-10 w-10 text-[#C5E86C]"
+                className="h-10 w-10 text-[var(--color-accent)]"
                 weight="fill"
               />
               <h4 className="mt-4 font-display text-2xl font-bold tracking-tight uppercase">
@@ -183,7 +183,7 @@ export function ContactModal() {
               <button
                 type="button"
                 onClick={close}
-                className="mt-6 font-mono text-[11px] tracking-[0.25em] text-[#C5E86C] uppercase transition-opacity hover:opacity-80"
+                className="mt-6 font-mono text-[11px] tracking-[0.25em] text-[var(--color-accent)] uppercase transition-opacity hover:opacity-80"
               >
                 Close
               </button>
@@ -241,7 +241,7 @@ export function ContactModal() {
               <button
                 type="submit"
                 disabled={state === "submitting"}
-                className="inline-flex w-full items-center justify-center gap-1.5 bg-[#C5E86C] px-4 py-3 font-mono text-[11px] tracking-[0.25em] text-black uppercase transition-opacity hover:opacity-90 disabled:opacity-60"
+                className="inline-flex w-full items-center justify-center gap-1.5 bg-[var(--color-accent)] px-4 py-3 font-mono text-[11px] tracking-[0.25em] text-black uppercase transition-opacity hover:opacity-90 disabled:opacity-60"
               >
                 {state === "submitting" ? "Sending…" : "Request early access"}
                 {state !== "submitting" && (

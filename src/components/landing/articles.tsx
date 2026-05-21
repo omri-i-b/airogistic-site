@@ -27,7 +27,7 @@ const articles = [
 
 export function Articles() {
   return (
-    <section className="border-b border-white/10 bg-[#0a0a0a]">
+    <section className="border-b border-white/10 bg-[var(--color-paper-2)]">
       <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
         <p className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           05 &nbsp;/&nbsp; Field Notes
