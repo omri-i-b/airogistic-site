@@ -1,40 +1,28 @@
-import {
-  AirplaneTilt,
-  GitBranch,
-  CheckSquare,
-  Broadcast,
-  Cube,
-  ListChecks,
-} from "@phosphor-icons/react/dist/ssr";
+/* Hallmark · genre: atmospheric-technical · design-system: DESIGN.md · designed-as-app */
+/* Hallmark · pre-emit critique: P5 H5 E4 S4 R5 V5 */
 
 const features = [
   {
-    icon: AirplaneTilt,
     title: "Swarm registry",
     body: "Vehicles, ground stations, and types, all tracked. See the whole swarm in one place.",
   },
   {
-    icon: GitBranch,
     title: "Parameter version control",
     body: "Every flight, every vehicle, pinned to a known-good config. No surprise drift across the swarm.",
   },
   {
-    icon: CheckSquare,
     title: "Per-vehicle pre-flight",
     body: "Block takeoff until every check passes. Sensors, motors, GPS lock, comms, geofence, all scriptable.",
   },
   {
-    icon: Broadcast,
     title: "Swarm-aware in-flight assertions",
     body: "Telemetry checks that fire mid-mission. Auto-abort or flag anomalies before they propagate.",
   },
   {
-    icon: Cube,
     title: "Sim + hardware",
     body: "Same test definitions run in your simulator and against the live swarm. No translation layer.",
   },
   {
-    icon: ListChecks,
     title: "Swarm mission orchestration",
     body: "Compose missions as sequences of tests and steps. Coordinate across every vehicle in the swarm.",
   },
@@ -42,30 +30,33 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <section className="border-b border-white/10">
-      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 py-14 md:py-18 lg:py-20">
-        <p className="mb-4 font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
+    <section className="bg-[var(--color-paper)] py-16 md:py-24 lg:py-32">
+      <div className="mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12">
+        <p className="mb-3 font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase">
           <span className="mr-1.5 text-[var(--color-accent)]">—</span>The Platform
         </p>
         <h2 className="max-w-3xl font-display text-[26px] md:text-[34px] lg:text-[44px] leading-[0.95] font-bold tracking-[-0.02em] uppercase">
           Swarm, parameters, tests, missions, one system.
         </h2>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-12 gap-y-10 border-t border-white/10 pt-10">
-          {features.map((feat) => {
-            const Icon = feat.icon;
-            return (
-              <div key={feat.title}>
-                <Icon className="h-5 w-5 text-white/85" weight="regular" />
-                <h3 className="mt-4 font-display text-lg font-bold tracking-tight uppercase">
-                  {feat.title}
-                </h3>
-                <p className="mt-2 text-base leading-relaxed text-white/70">
-                  {feat.body}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+
+        <ol className="mt-12 md:mt-16 lg:mt-20 border-t border-[var(--color-rule)]">
+          {features.map((feat, i) => (
+            <li
+              key={feat.title}
+              className="grid grid-cols-[56px_minmax(0,1fr)] items-baseline gap-x-4 gap-y-2 border-b border-[var(--color-rule)] py-6 md:grid-cols-[80px_minmax(0,1fr)_minmax(0,2fr)] md:gap-x-8 md:py-8 lg:py-10"
+            >
+              <span className="font-display text-3xl md:text-4xl font-bold text-[var(--color-accent)] tabular-nums">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-lg md:text-xl font-bold tracking-tight uppercase">
+                {feat.title}
+              </h3>
+              <p className="col-start-2 md:col-start-3 text-base leading-relaxed text-white/65">
+                {feat.body}
+              </p>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
