@@ -7,17 +7,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-white/10">
       <div className="relative mx-auto max-w-[1680px] px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-10 md:pb-12 lg:pb-14">
-        <div className="flex flex-wrap items-center gap-3">
-          <p className="font-mono text-[11px] tracking-[0.3em] text-white/45 uppercase">
-            <span className="text-[#C5E86C]">—</span> The Software
-          </p>
-          <span className="inline-flex items-center gap-1.5 border border-[#C5E86C]/40 bg-[#C5E86C]/10 px-2.5 py-1 font-mono text-[10px] tracking-[0.25em] text-[#C5E86C] uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#C5E86C]" />
-            Available today
-          </span>
-        </div>
-
-        <h1 className="mt-5 max-w-5xl font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
+        <h1 className="max-w-5xl font-display text-[30px] md:text-[44px] lg:text-[56px] leading-[0.98] font-bold tracking-[-0.02em] uppercase">
           The software platform for{" "}
           <span className="text-[#C5E86C]">autonomous drone swarms</span>.
         </h1>
