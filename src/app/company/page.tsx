@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const contactCards = [
   {
     icon: MapPin,
-    label: "Address",
+    label: "Headquarters",
     body: "Austin, Texas",
   },
   {
